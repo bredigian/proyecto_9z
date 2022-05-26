@@ -274,18 +274,39 @@ box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
     }
 
 
-    /*-------------------MATCHES-------------------*/
+    /*-------------------NEWS-------------------*/
 
     .body__news{
         display: grid;
         grid-template-areas:
             "logo"
+            "news__container"
             "footer"
             "header"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 1fr 0fr;
+        grid-template-rows: 0.5fr 4fr 1fr 0fr;
     }
+    .news__container{
+        grid-area: news__container;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .news__container-items{
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .news-item{
+        font-size: 3rem;
+        color: var(--violet9z);
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        padding: 3rem;
+    }
+
 
     /*-------------------MATCHES-------------------*/
 
@@ -488,7 +509,51 @@ box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
     }
 
 
-    /*-------------------TABLE QUERIE-------------------*/
+    /*-------------------SHOP-------------------*/
+    .body__shop{
+        display: grid;
+        grid-template-areas: 
+            "logo"
+            "shop__container"
+            "footer"
+            "header"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 5fr 1fr 0fr;
+    }
+    .shop__container{
+        grid-area: shop__container;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .shop__container-items{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2rem;
+        padding: 2rem;
+        gap: 2rem;
+        justify-content: center;
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+    }
+    .shop-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        width: min-content;
+        height: 20rem;
+        border: solid var(--violet9z) 0.4rem;
+        border-radius: 1rem;
+        color: var(--violet9z);
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+
+    /*-------------------ABOUT-------------------*/
 
     .body__about{
         display: grid;
