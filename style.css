@@ -1,0 +1,1266 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+:root{
+    --violet9z: #23003f;
+    --violet9z-transparent: rgba(35, 0, 63,0.9);
+    --white-transparent: rgba(255, 255, 255, 0.7);
+    --black-transparent: rgba(0, 0, 0, 0.2);
+}
+*{
+    margin: 0;
+    padding: 0; 
+	box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
+
+/*-------------------FIRST MOBILE-------------------*/
+
+@media (max-width: 400px){
+    body{
+        background-color: #23003f;
+    }
+
+    /*-------------------INDEX-------------------*/
+
+    .body__index{
+        display: grid;
+        grid-template-areas: 
+            "logo"
+            "news"
+            "last-match"
+            "shop"
+            "more-news"
+            "footer"
+            "header"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 1.5fr 1.5fr 1.5fr 3fr 1fr 0fr;
+    }
+    .top-logo{ /*---------------GENERAL PROPERTY---------------*/
+        grid-area: logo;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+    .top-logo img{ /*---------------GENERAL PROPERTY---------------*/
+        width: 10rem;
+        height: 10rem;
+    }
+    .header{ /*---------------GENERAL PROPERTY---------------*/
+        grid-area: header;
+        background-color: #FFFFFF;
+        height: fit-content;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        position: sticky;
+        bottom: 1rem;
+        z-index: 1;
+        -webkit-box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
+-moz-box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
+box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
+    }
+    .header__logo{ /*---------------GENERAL PROPERTY---------------*/
+        width: 5rem;
+        height: 5rem;
+    }
+    .navbar__container{ /*---------------GENERAL PROPERTY---------------*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+        padding: .5rem;
+    }
+    .li-word{ /*---------------GENERAL PROPERTY---------------*/
+        display: none;
+    }
+    .fa-solid{ /*---------------GENERAL PROPERTY---------------*/
+        font-size: 2.5rem;
+        color: var(--violet9z);
+        padding: 1rem;
+    }
+    .fa-solid:hover{
+        background-color: var(--violet9z);
+        color: #FFFFFF;
+        border-radius: 1rem;
+    }
+    .news{
+        grid-area: news;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        background-image: url(./img/news/lol_newTeam.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 2rem;
+        margin-top: 0;
+        border-radius: 1rem;
+    }
+    .news-title{
+        width: 100%;
+        font-weight: 700;
+        background-color: #FFFFFF;
+        color: var(--violet9z);
+        text-align: center;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .last-match{
+        grid-area: last-match;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin: 2rem;
+        margin-top: 0;
+    }
+    .match-info{
+        display: flex;
+        justify-content: space-between;
+        color: var(--violet9z);
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .game-info{
+        border: solid var(--violet9z) 0.25rem;
+        border-radius: 1rem;
+        padding: .5rem;
+        margin: .5rem;
+        height: fit-content;
+        text-align: center;
+    }
+    .last-match__item{
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        padding: 2rem;
+        border-radius: 1rem;
+        gap: 2rem;
+    }
+    .flex{
+        display: flex;
+    }
+    .match-container{
+        align-items: center;
+        justify-content: space-around;
+        gap: 4rem;
+    }
+    .opponent-img{
+        width: 8rem;
+        height: 8rem;
+    }
+    .score{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .next-matches{
+        display: none;
+    }
+    .shop{
+        grid-area: shop;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+        margin: 2rem;
+        margin-top: 0;
+    }
+    .title{
+        font-size: 2rem;
+        color: #FFFFFF;
+        border-bottom: solid #FFFFFF 0.3rem;
+    }
+    .shop__items{
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+    .shop__item{
+        width: 10rem;
+        height: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid var(--violet9z) 0.3rem;
+        border-radius: 1rem;
+    }
+    .shop__item-description{
+        font-size: 2rem;
+        color: var(--violet9z);
+        text-align: center;
+        font-weight: 700;
+    }
+    .more__news{
+        grid-area: more-news;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3rem;
+    }
+    
+    .more__news-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .more__news-item img{
+        width: 100%;
+        height: 18rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+    .footer{ /*---------------GENERAL PROPERTY---------------*/
+        grid-area: footer;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 3rem;
+        padding: 3rem;
+        color: var(--violet9z);
+    }
+    .footer__container{ /*---------------GENERAL PROPERTY---------------*/
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .more__sections{ /*---------------GENERAL PROPERTY---------------*/
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        list-style-type: none;
+        gap: 2rem;
+    }
+    .more__sections-item{ /*---------------GENERAL PROPERTY---------------*/
+        color: var(--violet9z);
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .footer__text{ /*---------------GENERAL PROPERTY---------------*/
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--violet9z);
+    }
+    .footer__social{ /*---------------GENERAL PROPERTY---------------*/
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer__social i{ /*---------------GENERAL PROPERTY---------------*/
+        font-size: 3rem;
+        color: var(--violet9z);
+    }
+
+    /*-------------------MATCHES-------------------*/
+
+    .body__matches{
+        display: grid;
+        grid-template-areas: 
+            "logo"
+            "last "
+            "next"
+            "footer"
+            "header"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 2.5fr 1.5fr 1fr 0fr;
+    }
+    .matches{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .flex{
+        display: flex;
+    }
+    .matches__last{
+        grid-area: last;
+    }
+    .matches-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .matches-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #FFFFFF;
+        padding: 1.5rem;
+        gap: 1.5rem;
+        border-radius: 1rem;
+    }
+    .item-date{
+        font-size: 1rem;
+        font-weight: 700;
+        width: min-content;
+    }
+    .item-opponents{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .opponent{
+        align-items: center;
+        gap: 1rem;
+    }
+    .opponent__name{
+        font-size: 2rem;
+        width: min-content;
+        font-weight: 700;
+    }
+    .scores{
+        display: flex;
+        font-size: 2rem;
+        gap: .4rem;
+        font-weight: 700;
+    }
+    .logo-game{
+        width: 2rem;
+        height: 2.rem;
+    }
+    .opponent__img img{
+        width: 4rem;
+        height: 4rem;
+    }
+    #logo-mibr{
+        width: 6rem;
+        height: 3rem;
+    }
+    .matches__next{
+        grid-area: next;
+        justify-content: center;
+    }
+
+    /*-------------------TEAMS-------------------*/
+
+    .only-desktop{
+        display: none;
+    }
+
+    .body__teams{
+        display: grid;
+        grid-template-areas: 
+            "logo"
+            "teams"
+            "footer"
+            "header"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 5fr 1fr 0fr;
+    }
+    .teams__container{
+        grid-area: teams;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .teams{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 2rem;
+        gap: 2rem;
+    }
+    .team__item{
+        width: 35rem;
+        padding: 3rem;
+        text-align: center;
+        background-color: #FFFFFF;
+        border: solid #FFFFFF 0.5rem;
+        border-radius: 1rem;
+    }
+    .team__img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*-------------------CSGO ACADEMY VALORANT LOL-------------------*/
+
+    .body__team{
+        display: grid;
+        grid-template-areas: 
+            "logo"
+            "team"
+            "footer"
+            "header"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 8fr 1fr 0fr;
+    }
+    .container-team{
+        grid-area: team;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .allTeam{
+        background-image: url(./img/teams/csgo/all_team_9z.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 35rem;
+        height: 17.5rem;
+        text-align: center;
+        border-radius: 1rem;
+    }
+    .allTeam__ico{
+        width: 5rem;
+        height: 2.5rem;
+        margin: .2rem;
+    }
+    .players{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+    .player{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #FFFFFF;
+        margin: 0 3rem;
+        border-radius: 1rem;
+    }
+    .player__img{
+        width: 15rem;
+        height: 15rem;
+    }
+    .player__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+    }
+    .player__info p{
+        font-size: 4rem;
+        color: var(--violet9z);
+        font-weight: 700;
+        width: min-content;
+        text-align: center;
+    }
+    .socialNetworks{
+        font-size: 2rem;
+        color: var(--violet9z);
+        display: flex;
+        gap: 2rem;
+    }
+
+
+    /*-------------------TABLE QUERIE-------------------*/
+
+    .body__about{
+        display: grid;
+        grid-template-areas: 
+            "logo"
+            "info"
+            "sponsors"
+            "footer"
+            "header"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 4fr 3.5fr 1fr 0fr;
+    }
+    .info-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #FFFFFF;
+        font-weight: 700;
+    }
+    .about-section__title{
+        font-size: 4rem;
+        border-bottom: solid #FFFFFF 0.5rem;
+    }
+    .about-section__text{
+        text-align: center;
+        padding: 3rem;
+        margin: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        color: var(--violet9z);
+    }
+    .about-text{
+        font-size: 1.75rem;
+    }
+    .about-section__media{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .info-ceo__img img{
+        width: 30rem;
+        height: 30rem;
+        border-radius: 1rem;
+    }
+    .info-ceo__name{
+        font-size: 2rem;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    .info-ceo__social{
+        font-size: 2.5rem;
+        display: flex;
+        gap: 3rem;
+    }
+    .info-ceo__social i{
+        color: #FFFFFF;
+    }
+    .sponsors{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+    .sponsors-title{
+        font-size: 2.5rem;
+        color: #FFFFFF;
+        border-bottom: solid #FFFFFF 0.4rem;
+        font-weight: 700;
+    }
+    .sponsors-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+    .sponsor-logo{
+        width: 10rem;
+        height: 7rem;
+    }
+    #shell-logo{
+        width: 8rem;
+        height: 7rem;
+    }
+    #diggit-logo{
+        height: 5rem;
+    }
+    #logitech-logo{
+        width: 11rem;
+        height: 4rem;
+    }
+    #redbull-logo{
+        width: 8rem;
+        height: 5rem;
+    }
+    
+
+    /*-------------------CONTACT-------------------*/
+
+    .body__contact{
+        display: grid;
+        grid-template-areas: 
+            "logo"
+            "contact-info"
+            "contact-input"
+            "footer"
+            "header"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 1.5fr 1fr 0fr;
+    }
+    .contact-info{
+        grid-area: contact-info;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 3rem;
+        padding: 2rem;
+        gap: 2rem;
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        color: var(--violet9z);
+        font-weight: 700;
+    }
+    .contact-info__titles{
+        font-size: 5rem;
+        border: solid var(--violet9z) .5rem;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+    .contact-info p{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .contact-section{
+        grid-area: contact-input;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .contact-section__title{
+        font-size: 3rem;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    .contact-section form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .contact-section__data{
+        font-size: 2rem;
+        background-color: transparent;
+        border: none;
+        border-bottom: solid #FFFFFF 0.2rem;
+        color: #FFFFFF;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
+    .button{
+        font-size: 2rem;
+        background-color: #FFFFFF;
+        color: var(--violet9z);
+        padding: 1rem;
+        border: none;
+        border-radius: 1rem;
+        font-weight: 700;
+    }
+    ::placeholder{
+        color: #FFFFFF;
+    }
+
+}
+
+/*-------------------TABLE QUERIE-------------------*/
+
+
+/*-------------------DESKTOP QUERIE-------------------*/
+
+@media(min-width: 1280px){
+    body{
+        background-image: url(./img/wallpaper-9z-white.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .body__index{
+        display: grid;
+        grid-template-areas: 
+            "header header"
+            "news news"
+            "last-match next-matches"
+            "shop shop"
+            "footer footer"
+        ;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 4fr 4fr 4fr 1fr;
+    }
+    .header{
+        grid-area: header;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        background-color: var(--violet9z);
+        z-index: 1;
+    }
+    /*---------- NAVBAR SECTION ----------*/
+    .navbar__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+        align-items: center;
+    }
+    .header__navbar li{
+        font-size: 2rem;
+        margin: 1rem;
+        padding: 1rem;
+        color: #FFFFFF;
+        border-radius: 1rem;
+        transition: 0.2s;
+    }
+    .header__navbar li:hover{
+        background-color: #FFFFFF;
+        color: var(--violet9z);
+        border-radius: 1rem;
+    }
+    .header__logo{
+        width: 7rem;
+        height: 7rem;
+        margin: 2rem;
+    }
+        
+    /*---------- INDEX SECTION ----------*/
+
+    .news{
+        grid-area: news;
+        margin: 3rem;
+        border-radius: 5rem;
+        background-image: url(./img/news/lol_newTeam.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        transition: all .4s;
+    }
+    .news:hover{
+        transform: scale(0.95);
+        cursor: pointer;
+    }
+    .news-title{
+        width: 100%;
+        padding: 1rem;
+        color: #FFFFFF;
+        font-size: 2rem;
+        background-color: var(--violet9z);
+        border-bottom-left-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+        text-align: center;
+    }
+    .flex{
+        display: flex;
+        align-items: center;
+    }
+    .last-match{
+        grid-area: last-match;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 5rem;
+        gap: 2rem;
+    }
+    .title{
+        color: var(--violet9z);
+        font-size: 2.5rem;
+        font-weight: 700;
+        border-bottom: solid var(--violet9z) .3rem;
+    }
+    .item{
+        background-color: var(--violet9z);
+        color: #FFFFFF;
+        border-radius: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+        gap: 2rem;
+        width: fit-content;
+    }
+    .match-info{
+        width: 100%;
+        display: flex;
+        font-size: 2rem;
+        font-weight: 700;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .game{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .match-container{
+        gap: 5rem;
+    }
+    .score{
+        gap: 2rem;
+    }
+    .opponent-img{
+        height: 12rem;
+        width: 12rem;
+    }
+    .next-matches{
+        grid-area: next-matches;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+    }
+    .next-matches__container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .next-matches__item .match-info{
+        font-size: 1.2rem;
+    }
+    .next-matches__item .match-container{
+        gap: 0;
+    }
+    .next-matches .match-container .opponent-img{
+        width: 6rem;
+        height: 6rem;
+    }
+    .next-matches .score{
+        font-size: 2rem;
+    }
+    .shop{
+        grid-area: shop;
+        border: solid black 10px;
+    }
+    /*---------- MATCHES SECTION ----------*/
+    /*
+    .matches{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        gap: 4rem;
+    }
+    .matches-title{
+        font-size: 3rem;
+        padding: 1rem;
+        background-color: transparent;
+        color: var(--violet9z);
+        border-bottom: solid var(--violet9z) .4rem;
+        font-weight: 700;
+    }
+    .matches-container{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 2rem;
+        align-items: center;
+        width: 50rem;
+        color: #FFFFFF;
+        font-size: 2.5rem;
+        transition: 0.2s;
+        height: 100%;
+        justify-content: flex-start;
+    }
+    .matches-container:hover{
+        transform: scale(1.05);
+    }
+    .matches-item{
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        width: 100%;
+        gap: 2rem;
+        background-color: var(--violet9z-transparent);
+        border: solid var(--violet9z) 0.4rem;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+    .item-game img{
+        width: 3rem;
+        height: 3rem;
+    }
+    .item-date{
+        font-size: 1.5rem;
+    }
+    .item-opponents{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .opponent{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .opponent-img{
+        width: 3rem;
+        height: 3rem;
+    }
+    .opponent-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .opponent-name{
+        width: min-content;
+    }
+    .scores{
+        display: flex;
+        gap: .5rem;
+    }
+    */
+    /*---------- TEAMS SECTION ----------*/
+    .teams-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100rem;
+    }
+    .teams-title{
+        font-size: 3rem;
+        padding: 1rem;
+        background-color: transparent;
+        color: var(--violet9z);
+        border-bottom: solid var(--violet9z) .4rem;
+        font-weight: 700;
+    }
+    .teams{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 75rem;
+    }
+    .team-item{
+        display: flex;
+        margin: 2rem;
+        padding: 4rem;
+        border: solid var(--violet9z) 0.5rem;
+        border-radius: 1rem;
+        align-items: center;
+        color: #000000;
+        background-color: rgba(35, 0, 63,0.9);
+        transition: 0.2s;
+        width: 35rem;
+    }
+    .team__img{
+        width: 100%;
+        height: 100%;
+    }
+    .team-item:hover{
+        transform: scale(1.05);
+        background-color: var(--violet9z);
+    }
+    .container-team{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+    }
+    .allTeam{
+        background-image: url(./img/teams/csgo/all_team_9z.jpg);
+        background-position: top center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 120rem;
+        height: 40rem;
+        margin-bottom: 2rem;
+        border: solid var(--violet9z-transparent) 0.5rem;
+        border-radius: 1rem;
+        font-size: 4rem;
+        text-align: center;
+    }
+    .allTeam__ico{
+        width: 16.5rem;
+        height: 7.5rem;
+        margin: 1rem;
+    }
+    .players{
+        display: flex;
+        width: 100%;
+        height: 32rem;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 1rem;
+    }
+    .player{
+        background-color: var(--violet9z-transparent);
+        font-size: 2rem;
+        font-weight: 700;
+        justify-content: space-between;
+        border-radius: 1rem;
+        transition: .2s;
+    }
+    .player:hover{
+        background-color: #23003f;
+        border-radius: 1rem;
+        color: white;
+    }
+    .player__img{
+        width: 30rem;
+        height: 30rem;
+    }
+    .infoPlayers{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--violet9z);
+    }
+    .info{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .socialNetworks a{
+        color: var(--violet9z);}/*---------- ABOUT SECTION ----------*/
+        
+
+
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100rem;
+        background-color: var(--violet9z-transparent);
+        margin: 2rem;
+        border: solid var(--violet9z) 0.4rem;
+        border-radius: 1rem;
+    }
+    .info-section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #FFFFFF;
+    }
+    .about-section__title{
+        font-size: 5rem;
+        font-weight: 700;
+        margin: 5rem;
+        background-color: #FFFFFF;
+        color: #23003f;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+    .about-section__text{
+        width: 80rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .about-text{
+        margin: 2rem;
+    }
+    .about-section__media{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+    .info-ceo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-ceo__img{
+        height: 40rem;
+        width: 40rem;
+    }
+    .info-ceo__img img{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+    }
+    .info-ceo__name{
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--violet9z);
+        background-color: #FFFFFF;
+        border: transparent;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem ;
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+    }
+    .info-ceo__social{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem;
+        margin-top: 2rem;
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+    }
+    .info-ceo__social i{
+        padding: 1rem;
+        font-size: 2rem;
+        color: var(--violet9z);
+        border-radius: 1rem;
+    }
+    .info-ceo__social i:hover{
+        background-color: var(--violet9z);
+        color: #FFFFFF;
+        border-radius: 1rem;
+    }
+    .about-section__sponsors{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 4rem;
+    }
+    .sponsors-title{
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--violet9z);
+        padding: 1rem;
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+    }
+    .sponsors-img{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 3rem;
+    }
+    #shell-logo{
+        width: 6rem;
+        height: 5rem;
+    }
+    #diggit-logo{
+        width: 8rem;
+        height: 4rem;
+    }
+    #lemon-logo{
+        width: 14rem;
+    }
+    #logitech-logo{
+        width: 13rem;
+        height: 4rem;
+    }
+    .sponsor-logo{
+        width: 9rem;
+        height: 5rem;
+    }
+    /*---------- CONTACT SECTION ----------*/
+    form{
+        margin: 1rem;
+    }
+    form div{
+        margin: 1rem;
+    }
+    .container__contact{
+        margin: 2rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #FFFFFF;
+        height: 75rem;
+    }
+    .contact-info__titles{
+        font-size: 5rem;
+        text-align: center;
+        padding: 1.5rem;
+        font-weight: 700;
+    }
+    .contact-info{
+        background-color: var(--violet9z-transparent);
+        border: solid var(--violet9z) 0.5rem;
+        font-size: 3.5rem;
+        margin: 1rem;
+        padding: 1.5rem;
+        width: 50rem;
+        text-align: center;
+        border-radius: 1rem;
+    }
+    .contact-section{
+        margin: 1rem;
+        padding: 1.5rem;
+        display: block;
+        text-align: center;
+        width: 40rem;
+        border: solid var(--violet9z) 0.5rem;
+        border-radius: 1rem;
+        background-color: var(--violet9z-transparent);
+    }
+    ::placeholder{
+        color: #FFFFFF;
+    }
+    #contact-section__title{
+        font-size: 3rem;
+        padding: 1.5rem;
+    }
+    .contact-section__data{
+        background-color: transparent;
+        border: none;
+        border-bottom: solid #FFFFFF 1px;
+        font-size: 2rem;
+    }
+    .text-contact{
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    .button{
+        font-size: 2rem;
+        background: none;
+        color: #FFFFFF;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        border: solid #FFFFFF 0.1rem;
+    }
+    .button:hover{
+        background-color: #FFFFFF;
+        color: var(--violet9z-transparent);}/*---------- FOOTER SECTION ----------*/
+        
+
+
+    .footer{
+        grid-area: footer;
+        background-color: var(--violet9z);
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer__text{
+        margin: 2.5rem;
+        padding: 1rem;
+        color: #FFFFFF;
+    }
+    .footer__social a{
+        color: #FFFFFF;
+    }
+    .footer__social{
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        margin: 2.5rem;
+    }
+    .footer__social i{
+        font-size: 3rem;
+    }
+}
