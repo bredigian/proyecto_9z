@@ -64,8 +64,8 @@ a{
         bottom: 1rem;
         z-index: 1;
         -webkit-box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
--moz-box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
-box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
+        -moz-box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
+        box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
     }
     .header__logo{ /*---------------GENERAL PROPERTY---------------*/
         width: 5rem;
@@ -102,8 +102,7 @@ box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;
-        margin: 2rem;
-        margin-top: 0;
+        margin: 0 2rem;
         border-radius: 1rem;
     }
     .news-title{
@@ -122,6 +121,7 @@ box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 2rem;
         margin: 2rem;
         margin-top: 0;
@@ -156,7 +156,6 @@ box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
     .match-container{
         align-items: center;
         justify-content: space-around;
-        gap: 4rem;
     }
     .opponent-img{
         width: 8rem;
@@ -165,7 +164,7 @@ box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
     .score{
         font-size: 3rem;
         font-weight: 700;
-        gap: 3rem;
+        gap: 2rem;
         width: 100%;
         justify-content: center;
     }
@@ -218,6 +217,7 @@ box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
         justify-content: flex-start;
         align-items: center;
         gap: 3rem;
+        margin-bottom: 3rem;
     }
     
     .more__news-item{
@@ -225,7 +225,6 @@ box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 3rem;
     }
     .more__news-item img{
         width: 40rem;
@@ -763,18 +762,146 @@ box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
 
 /*-------------------TABLE QUERIE-------------------*/
 
-@media(min-width: 481px) and (max-width: 768px){
-    
-}
-
-/*-------------------DESKTOP QUERIE-------------------*/
-
-@media(min-width: 1280px){
+@media(min-width: 768px){
     body{
         background-image: url(./img/wallpaper-9z-white.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
+        background-position: center;
     }
+    .only-mobile{
+        display: none;
+    }
+    .li-word{
+        display: block;
+    }
+    .only-desktop{
+        display: block;
+    }
+
+    /*-------------------INDEX-------------------*/
+
+    .body__index{
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "news "
+            "last-match" 
+            "next-matches"
+            "shop"
+            "more-news"
+            "footer"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr .5fr .5fr 1.25fr 1fr 1fr .5fr;
+    }
+    .header{
+        grid-area: header;
+        background-color: var(--violet9z);
+        border-radius: 0%;
+        box-shadow: none;
+        margin: 0;
+    }
+    .header__logo{
+        width: 8rem;
+        height: 8rem;
+    }
+    .navbar__container a{
+        font-size: 1.5rem;
+        color: #FFFFFF;
+        padding: 1rem;
+        transition: all .2s;
+    }
+    .news{
+        grid-area: news;
+        margin-top: 2rem;
+    }
+    .news-title{
+        background-color: var(--violet9z);
+        color: #FFFFFF;
+    }
+    .last-match{
+        grid-area: last-match;
+        justify-content: center;
+    }
+    .last-match__item{
+        width: 75%;
+    }
+    .title{
+        padding: 1rem;
+        background-color: var(--violet9z);
+        color: #FFFFFF;
+        font-weight: 700;
+        border-radius: 1rem;
+        border-bottom: none;
+    }
+    .item{
+        background-color: var(--violet9z);
+    }
+    .game-info{
+        color: #FFFFFF;
+        border: solid #FFFFFF 0.2rem;
+    }
+    .score{
+        color: #FFFFFF;
+    }
+    .next-matches{
+        grid-area: next-matches;
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .next-matches__container{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        width: 72%;
+    }
+    .next-matches__item{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+    .shop{
+        grid-area: shop;
+    }
+    .shop__items{
+        background-color: var(--violet9z);
+        height: 100%;
+        padding: 2rem;
+    }
+    .shop__item{
+        border-color: #FFFFFF;
+        width: 30%;
+        height: 100%;
+    }
+    .shop__item-description{
+        color: #FFFFFF;
+    }
+    .more__news{
+        grid-area: more-news;
+    }
+    .footer{
+        grid-area: footer;
+        background-color: var(--violet9z);
+    }
+    .more__sections-item{
+        color: #FFFFFF;
+    }
+    .footer__social i{
+        color: #FFFFFF;
+    }
+    .footer__text{
+        color: #FFFFFF;
+    }
+}
+
+/*-------------------DESKTOP QUERIE-------------------*/
+
+@media(min-width: 1200px){
     .body__index{
         display: grid;
         grid-template-areas: 
@@ -782,10 +909,11 @@ box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
             "news news"
             "last-match next-matches"
             "shop shop"
+            "more-news more-news"
             "footer footer"
         ;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 1fr 4fr 4fr 4fr 1fr;
+        grid-template-rows: 0fr 1fr 2fr 2fr 2fr .5fr;
     }
     .header{
         grid-area: header;
@@ -795,145 +923,61 @@ box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
         background-color: var(--violet9z);
         z-index: 1;
     }
-    /*---------- NAVBAR SECTION ----------*/
     .navbar__container{
-        display: flex;
-        flex-direction: row;
         justify-content: center;
-        list-style-type: none;
-        align-items: center;
+        gap: 3rem;
     }
-    .header__navbar li{
+    .navbar__container li{
         font-size: 2rem;
-        margin: 1rem;
-        padding: 1rem;
-        color: #FFFFFF;
+        transition: all .2s;
         border-radius: 1rem;
-        transition: 0.2s;
+        padding: 1rem;
     }
-    .header__navbar li:hover{
+    .navbar__container li:hover{
         background-color: #FFFFFF;
         color: var(--violet9z);
-        border-radius: 1rem;
     }
-    .header__logo{
-        width: 7rem;
-        height: 7rem;
-        margin: 2rem;
-    }
-        
-    /*---------- INDEX SECTION ----------*/
-
     .news{
         grid-area: news;
-        margin: 3rem;
-        border-radius: 5rem;
-        background-image: url(./img/news/lol_newTeam.jpeg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        transition: all .4s;
-    }
-    .news:hover{
-        transform: scale(0.95);
-        cursor: pointer;
-    }
-    .news-title{
-        width: 100%;
-        padding: 1rem;
-        color: #FFFFFF;
-        font-size: 2rem;
-        background-color: var(--violet9z);
-        border-bottom-left-radius: 5rem;
-        border-bottom-right-radius: 5rem;
-        text-align: center;
-    }
-    .flex{
-        display: flex;
-        align-items: center;
     }
     .last-match{
         grid-area: last-match;
-        display: flex;
-        flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
-        font-size: 5rem;
-        gap: 2rem;
+        margin-top: 2rem;
     }
-    .title{
-        color: var(--violet9z);
-        font-size: 2.5rem;
-        font-weight: 700;
-        border-bottom: solid var(--violet9z) .3rem;
-    }
-    .item{
-        background-color: var(--violet9z);
-        color: #FFFFFF;
-        border-radius: 5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 4rem;
-        gap: 2rem;
-        width: fit-content;
-    }
-    .match-info{
-        width: 100%;
-        display: flex;
-        font-size: 2rem;
-        font-weight: 700;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-    .game{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .match-container{
-        gap: 5rem;
-    }
-    .score{
-        gap: 2rem;
-    }
-    .opponent-img{
-        height: 12rem;
-        width: 12rem;
+    .last-match__item{
+        width: 60%;
     }
     .next-matches{
         grid-area: next-matches;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 2rem;
+        margin-top: 2rem;
     }
     .next-matches__container{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
+        width: 60%;
     }
-    .next-matches__item .match-info{
-        font-size: 1.2rem;
-    }
-    .next-matches__item .match-container{
-        gap: 0;
-    }
-    .next-matches .match-container .opponent-img{
-        width: 6rem;
-        height: 6rem;
-    }
-    .next-matches .score{
-        font-size: 2rem;
+    .next-matches__item{
+        width: 100%;
     }
     .shop{
         grid-area: shop;
-        border: solid black 10px;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .shop__items{
+        width: 85%;
+        height: 75%;
+        padding: 4rem;
+    }
+    .more__news{
+        grid-area: more-news;
+        gap: 5rem;
+    }
+    .footer{
+        grid-area: footer;
+    }
+    .more__sections{
+        flex-direction: row;
+        justify-content: space-evenly;
     }
     /*---------- MATCHES SECTION ----------*/
     /*
