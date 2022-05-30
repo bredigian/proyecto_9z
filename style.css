@@ -969,15 +969,18 @@ a{
     .navbar__container li{
         font-size: 2rem;
         transition: all .2s;
-        border-radius: 1rem;
         padding: 1rem;
     }
     .navbar__container li:hover{
-        background-color: #FFFFFF;
-        color: var(--violet9z);
+        border-bottom: solid #FFFFFF 0.1rem;
+        transform: translateY(-1rem);
     }
     .news{
         grid-area: news;
+        transition: all .2s;
+    }
+    .news:hover{
+        transform: scale(.95);
     }
     .last-match{
         grid-area: last-match;
@@ -1007,9 +1010,22 @@ a{
         height: 75%;
         padding: 4rem;
     }
+    .shop__item{
+        transition: all .2s;
+    }
+    .shop__item:hover{
+        transform: translateY(-1rem);
+        cursor: pointer;
+    }
     .more__news{
         grid-area: more-news;
         gap: 5rem;
+    }
+    .more__news-item{
+        transition: all .2s;
+    }
+    .more__news-item:hover{
+        transform: scale(1.05);
     }
     .footer{
         grid-area: footer;
@@ -1052,6 +1068,14 @@ a{
     }
     .matches-item{
         height: 8rem;
+        transition: all .2s;
+    }
+    .matches-item:hover{
+        transform: translateX(5rem);
+        cursor: pointer;
+    }
+    .matches__next .matches-item:hover{
+        transform: translateX(-5rem);
     }
     .footer{
         grid-area: footer;
