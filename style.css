@@ -18,15 +18,15 @@ a{
     text-decoration: none;
 }
 
-/*-------------------FIRST MOBILE-------------------*/
 
+/*-------------------FIRST MOBILE-------------------*/
 @media (min-width: 0px){
     body{
         background-color: #23003f;
     }
 
-    /*-------------------INDEX-------------------*/
 
+    /*-------------------INDEX-------------------*/
     .body__index{
         display: grid;
         grid-template-areas: 
@@ -219,7 +219,6 @@ a{
         gap: 3rem;
         margin-bottom: 3rem;
     }
-    
     .more__news-item{
         display: flex;
         flex-direction: column;
@@ -279,7 +278,6 @@ a{
 
 
     /*-------------------NEWS-------------------*/
-
     .body__news{
         display: grid;
         grid-template-areas:
@@ -316,7 +314,6 @@ a{
 
 
     /*-------------------MATCHES-------------------*/
-
     .body__matches{
         display: grid;
         grid-template-areas: 
@@ -403,8 +400,8 @@ a{
         justify-content: center;
     }
 
-    /*-------------------TEAMS-------------------*/
 
+    /*-------------------TEAMS-------------------*/
     .only-desktop{
         display: none;
     }
@@ -447,8 +444,8 @@ a{
         height: 100%;
     }
 
-    /*-------------------CSGO ACADEMY VALORANT LOL-------------------*/
 
+    /*-------------------CSGO ACADEMY VALORANT LOL-------------------*/
     .body__team{
         display: grid;
         grid-template-areas: 
@@ -561,8 +558,8 @@ a{
         border-radius: 1rem;
     }
 
-    /*-------------------ABOUT-------------------*/
 
+    /*-------------------ABOUT-------------------*/
     .body__about{
         display: grid;
         grid-template-areas: 
@@ -675,13 +672,12 @@ a{
     
 
     /*-------------------CONTACT-------------------*/
-
     .body__contact{
         display: grid;
         grid-template-areas: 
             "logo"
             "contact-info"
-            "contact-input"
+            "contact-section"
             "footer"
             "header"
         ;
@@ -712,7 +708,7 @@ a{
         text-align: center;
     }
     .contact-section{
-        grid-area: contact-input;
+        grid-area: contact-section;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -764,8 +760,8 @@ a{
     }
 }
 
-/*-------------------TABLE QUERIE-------------------*/
 
+/*-------------------TABLE QUERIE-------------------*/
 @media(min-width: 768px){
     body{
         background-image: url(./img/wallpaper-9z-white.jpg);
@@ -783,8 +779,8 @@ a{
         display: block;
     }
 
-    /*-------------------INDEX-------------------*/
 
+    /*-------------------INDEX-------------------*/
     .body__index{
         display: grid;
         grid-template-areas: 
@@ -904,6 +900,7 @@ a{
         color: #FFFFFF;
     }
 
+
     /*-------------------MATCHES-------------------*/
     .body__matches{
         display: grid;
@@ -936,8 +933,8 @@ a{
         color: #FFFFFF;
     }
 
-    /*-------------------TEAMS-------------------*/
 
+    /*-------------------TEAMS-------------------*/
     .body__teams{
         grid-template-areas: 
             "header"
@@ -962,6 +959,7 @@ a{
         width: 100%;
         height: 100%;
     }
+
 
     /*-------------------CSGO VALORANT LOL-------------------*/
     .body__team{
@@ -992,6 +990,7 @@ a{
         color: #FFFFFF;
     }
 
+
     /*-------------------NEWS-------------------*/
     .body__news{
         grid-template-areas: 
@@ -1005,6 +1004,7 @@ a{
         background-color: var(--violet9z);
         color: #FFFFFF;
     }
+
 
     /*-------------------SHOP-------------------*/
     .body__shop{
@@ -1026,6 +1026,7 @@ a{
         border-color: #FFFFFF;
         color: #FFFFFF;
     }
+
 
     /*-------------------ABOUT US-------------------*/
     .body__about{
@@ -1078,10 +1079,36 @@ a{
         padding: 3rem;
     }
 
+
+    /*-------------------CONTACT-------------------*/
+    .body__contact{
+        grid-template-areas: 
+            "header"
+            "contact-info"
+            "contact-section"
+            "footer"
+        ;
+        grid-template-rows: 1fr 3fr 3fr 2.5fr;
+    }
+    .contact-info{
+        margin-top: 3rem;
+        justify-content: center;
+        background-color: var(--violet9z);
+        color: #FFFFFF;
+    }
+    .contact-section form{
+        background-color: var(--violet9z);
+        padding: 3rem;
+        border-radius: 1rem;
+    }
+    .contact-section__title{
+        color: var(--violet9z);
+        border-bottom: solid var(--violet9z) .5rem;
+    }
 }
 
-/*-------------------DESKTOP QUERIE-------------------*/
 
+/*-------------------DESKTOP QUERIE-------------------*/
 @media(min-width: 1200px){
     .body__index{
         display: grid;
@@ -1177,6 +1204,7 @@ a{
         justify-content: space-evenly;
     }
 
+
     /*----------MATCHES----------*/
     .body__matches{
         display: grid;
@@ -1223,6 +1251,7 @@ a{
         grid-area: footer;
     }
 
+
     /*----------TEAMS----------*/
     .body__teams{
         grid-template-rows: 1fr 8fr 2fr;
@@ -1257,7 +1286,9 @@ a{
     .team__item:hover{
         transform: scale(1.05);
     }
-     /*----------CSGO VALORANT LOL----------*/
+    
+    
+    /*----------CSGO VALORANT LOL----------*/
      .body__team{
          grid-template-rows: 1fr 4fr 9fr 2fr;
          justify-items: center;
@@ -1327,7 +1358,6 @@ a{
     }
 
 
-
     /*----------ABOUT----------*/ 
     .body__about{
         grid-template-columns: 1fr;
@@ -1370,79 +1400,36 @@ a{
         width: 9rem;
         height: 5rem;
     }
-    /*---------- CONTACT SECTION ----------*/
-    form{
-        margin: 1rem;
-    }
-    form div{
-        margin: 1rem;
-    }
-    .container__contact{
-        margin: 2rem;
-        padding: 1rem;
-        display: flex;
-        justify-content: space-between;
+    /*----------CONTACT----------*/
+    .body__contact{
+        grid-template-areas: 
+            "header header"
+            "contact-info contact-section"
+            "footer footer"
+        ;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 4fr 2fr;
         align-items: center;
-        color: #FFFFFF;
-        height: 75rem;
     }
-    .contact-info__titles{
-        font-size: 5rem;
-        text-align: center;
-        padding: 1.5rem;
-        font-weight: 700;
-    }
-    .contact-info{
-        background-color: var(--violet9z-transparent);
-        border: solid var(--violet9z) 0.5rem;
-        font-size: 3.5rem;
-        margin: 1rem;
-        padding: 1.5rem;
-        width: 50rem;
-        text-align: center;
-        border-radius: 1rem;
-    }
-    .contact-section{
-        margin: 1rem;
-        padding: 1.5rem;
-        display: block;
-        text-align: center;
-        width: 40rem;
-        border: solid var(--violet9z) 0.5rem;
-        border-radius: 1rem;
-        background-color: var(--violet9z-transparent);
-    }
-    ::placeholder{
-        color: #FFFFFF;
-    }
-    #contact-section__title{
-        font-size: 3rem;
-        padding: 1.5rem;
-    }
-    .contact-section__data{
-        background-color: transparent;
-        border: none;
-        border-bottom: solid #FFFFFF 1px;
-        font-size: 2rem;
-    }
-    .text-contact{
-        font-weight: 700;
-        font-size: 2rem;
+    .buttons{
+        margin-top: 0;
     }
     .button{
         font-size: 2rem;
         background: none;
         color: #FFFFFF;
         margin: 1.5rem;
-        padding: 0.5rem;
+        padding: 1rem;
         border: solid #FFFFFF 0.1rem;
+        border-radius: 0;
     }
     .button:hover{
         background-color: #FFFFFF;
         color: var(--violet9z-transparent);
+        cursor: pointer;
     }
-    /*---------- FOOTER SECTION ----------*/
 
+    /*----------FOOTER----------*/
     .footer{
         grid-area: footer;
         background-color: var(--violet9z);
@@ -1450,6 +1437,7 @@ a{
         display: flex;
         justify-content: space-between;
         width: 100%;
+        height: 100%;
     }
     .footer__text{
         margin: 2.5rem;
