@@ -1328,6 +1328,7 @@ a{
         color: var(--violet9z);
     }
     
+
      /*----------NEWS----------*/ 
      .body__news{
         grid-template-rows: 1fr 5fr 2fr;
@@ -1400,6 +1401,8 @@ a{
         width: 9rem;
         height: 5rem;
     }
+
+
     /*----------CONTACT----------*/
     .body__contact{
         grid-template-areas: 
@@ -1407,7 +1410,7 @@ a{
             "contact-info contact-section"
             "footer footer"
         ;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 3fr 2fr;
         grid-template-rows: 1fr 4fr 2fr;
         align-items: center;
     }
