@@ -296,12 +296,15 @@ a{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .news__container-items{
         margin-top: 4rem;
         display: flex;
         flex-direction: column;
         gap: 4rem;
+        width: 75%;
+        text-align: center;
     }
     .news-item{
         font-size: 3rem;
@@ -986,6 +989,42 @@ a{
     .socialNetworks i{
         color: #FFFFFF;
     }
+
+    /*-------------------NEWS-------------------*/
+    .body__news{
+        grid-template-areas: 
+            "header"
+            "news__container"
+            "footer"
+        ;
+        grid-template-rows: 1fr 5fr 2.5fr;
+    }
+    .news-item{
+        background-color: var(--violet9z);
+        color: #FFFFFF;
+    }
+
+    /*-------------------SHOP-------------------*/
+    .body__shop{
+        grid-template-areas: 
+            "header"
+            "shop__container"
+            "footer"
+        ;
+        grid-template-rows: 1fr 5fr 2.5fr;
+    }
+    .shop__container{
+        justify-content: center;
+    }
+    .shop__container-items{
+        background-color: var(--violet9z);
+    }
+    .shop-item{
+        height: 30rem;
+        border-color: #FFFFFF;
+        color: #FFFFFF;
+    }
+
 }
 
 /*-------------------DESKTOP QUERIE-------------------*/
@@ -1204,7 +1243,38 @@ a{
     .socialNetworks a{
         color: var(--violet9z);
     }
-        
+    
+     /*----------NEWS----------*/ 
+     .body__news{
+        grid-template-rows: 1fr 5fr 2fr;
+    }
+     .news-item{
+         transition: all .2s;
+     }
+     .news-item:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+
+    /*----------SHOP----------*/ 
+    .body__shop{
+        grid-template-rows: 1fr 5fr 2fr;
+    }
+    .shop-item{
+        height: 50rem;
+        transition: all .2s;
+    }
+   .shop-item:hover{
+        transform: translateY(-3rem);
+        background-color: #FFFFFF;
+        color: var(--violet9z);
+        border-color: var(--violet9z);
+        cursor: pointer;
+    }
+
+
+
     /*---------- ABOUT SECTION ----------*/ 
 
     .about-container{
