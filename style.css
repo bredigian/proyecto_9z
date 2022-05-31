@@ -451,27 +451,21 @@ a{
         display: grid;
         grid-template-areas: 
             "logo"
-            "team"
+            "allTeam"
+            "players"
             "footer"
             "header"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: .5fr 8fr 1fr 0fr;
-    }
-    .container-team{
-        grid-area: team;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 3rem;
+        grid-template-rows: .5fr 1fr 7fr 1fr 0fr;
     }
     .allTeam{
+        grid-area: allTeam;
         background-image: url(./img/teams/csgo/all_team_9z.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
-        width: 100%;
-        height: 17.5rem;
+        margin: 0 2rem;
         text-align: center;
         border-radius: 1rem;
     }
@@ -481,6 +475,7 @@ a{
         margin-top: 1rem;
     }
     .players{
+        grid-area: players;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -504,7 +499,6 @@ a{
         flex-direction: column;
         align-items: center;
         gap: 2rem;
-        width: 100%;
     }
     .player__info p{
         font-size: 4rem;
@@ -817,6 +811,7 @@ a{
         color: #FFFFFF;
         padding: 1rem;
         transition: all .2s;
+        font-weight: 700;
     }
     .news{
         grid-area: news;
@@ -936,6 +931,61 @@ a{
         color: #FFFFFF;
     }
 
+    /*-------------------TEAMS-------------------*/
+
+    .body__teams{
+        grid-template-areas: 
+            "header"
+            "teams"
+            "footer"
+        ;
+        grid-template-rows: 1fr 7fr 2fr;
+    }
+    .teams__container{
+        grid-area: teams;
+    }
+    .teams{
+        width: 60%;
+    }
+    .team__item{
+        background-color: var(--violet9z);
+        border: none;
+        width: 100%;
+        height: 50%;
+    }
+    .team__img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*-------------------CSGO VALORANT LOL-------------------*/
+    .body__team{
+        grid-template-areas: 
+           "header"
+           "allTeam"
+           "players"
+           "footer"
+        ;
+        grid-template-rows: 1fr 3fr 8fr 2fr;
+    }
+    .allTeam{
+        grid-area: allTeam;
+        background-position: center top;
+        margin-top: 2rem;
+        border: solid var(--violet9z) 0.4rem;
+    }
+    .players{
+        grid-area: players;
+    }
+    .player{
+        background-color: var(--violet9z);
+    }
+    .player__info p{
+        color: #FFFFFF;
+    }
+    .socialNetworks i{
+        color: #FFFFFF;
+    }
 }
 
 /*-------------------DESKTOP QUERIE-------------------*/
@@ -1035,7 +1085,7 @@ a{
         justify-content: space-evenly;
     }
 
-    /*---------- MATCHES SECTION ----------*/
+    /*----------MATCHES----------*/
     .body__matches{
         display: grid;
         grid-template-areas: 
@@ -1082,110 +1132,74 @@ a{
     }
 
     /*---------- TEAMS SECTION ----------*/
-    .teams-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+    .body__teams{
+        grid-template-rows: 1fr 8fr 2fr;
+    }
+    .teams__container{
+        justify-content: flex-start;
         align-items: center;
         height: 100rem;
+        margin-top: 5rem;
     }
-    .teams-title{
-        font-size: 3rem;
+    .teams__title{
+        font-size: 2rem;
         padding: 1rem;
-        background-color: transparent;
-        color: var(--violet9z);
-        border-bottom: solid var(--violet9z) .4rem;
+        background-color: var(--violet9z);
+        color: #FFFFFF;
         font-weight: 700;
     }
     .teams{
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        height: 75rem;
-    }
-    .team-item{
-        display: flex;
-        margin: 2rem;
-        padding: 4rem;
-        border: solid var(--violet9z) 0.5rem;
-        border-radius: 1rem;
-        align-items: center;
-        color: #000000;
-        background-color: rgba(35, 0, 63,0.9);
-        transition: 0.2s;
-        width: 35rem;
-    }
-    .team__img{
-        width: 100%;
+        flex-direction: row;
         height: 100%;
+        width: 100%;
+        padding: 0;
     }
-    .team-item:hover{
-        transform: scale(1.05);
-        background-color: var(--violet9z);
-    }
-    .container-team{
-        height: 100%;
+    .team__item{
+        width: 20%;
+        height: 90%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin: 2rem;
+        justify-content: center;
+        transition: all .2s;
     }
-    .allTeam{
-        background-image: url(./img/teams/csgo/all_team_9z.jpg);
-        background-position: top center ;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 120rem;
-        height: 40rem;
-        margin-bottom: 2rem;
-        border: solid var(--violet9z-transparent) 0.5rem;
-        border-radius: 1rem;
-        font-size: 4rem;
-        text-align: center;
+    .team__item:hover{
+        transform: scale(1.05);
     }
-    .allTeam__ico{
-        width: 16.5rem;
-        height: 7.5rem;
-        margin: 1rem;
-    }
-    .players{
-        display: flex;
-        width: 100%;
-        height: 32rem;
-        justify-content: space-evenly;
-        align-items: center;
-        border-radius: 1rem;
-    }
-    .player{
-        background-color: var(--violet9z-transparent);
-        font-size: 2rem;
-        font-weight: 700;
-        justify-content: space-between;
-        border-radius: 1rem;
-        transition: .2s;
-    }
-    .player:hover{
-        background-color: #23003f;
-        border-radius: 1rem;
-        color: white;
-    }
+     /*----------CSGO VALORANT LOL----------*/
+     .body__team{
+         grid-template-rows: 1fr 4fr 9fr 2fr;
+         justify-items: center;
+     }
+   .allTeam{
+       border: solid var(--violet9z) .5rem;
+       width: 75%;
+   }
+   .allTeam__ico{
+       width: 20rem;
+       height: 9rem;
+   }
+   .players{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       width: 100%;
+       max-width: none;
+       padding: 0;
+       align-items: center;
+   }
+   .player{
+       height: 50rem;
+       display: flex;
+       flex-direction: column;
+       transition: all .2s;
+   }
+   .player:hover{
+       transform: translateY(-3rem);
+       cursor: pointer;
+   }
     .player__img{
         width: 30rem;
         height: 30rem;
-    }
-    .infoPlayers{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        font-size: 2rem;
-        font-weight: 700;
-        color: var(--violet9z);
-    }
-    .info{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
     }
     .socialNetworks a{
         color: var(--violet9z);
