@@ -1159,6 +1159,15 @@ a{
     .last-match__item{
         width: 60%;
     }
+    .item{
+        transition: all .1s;
+    }
+    .item:active{
+        transform: scale(.95);
+    }
+    .item:hover{
+        cursor: pointer;
+    }
     .next-matches{
         grid-area: next-matches;
         margin-top: 2rem;
