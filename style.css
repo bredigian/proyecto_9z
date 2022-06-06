@@ -38,7 +38,7 @@ a{
             "header"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 0fr 0fr 0fr 1fr 1fr 0fr;
+        grid-template-rows: 0fr 0fr 0fr 1fr 0fr 0fr;
     }
     .top-logo{ /*---------------GENERAL PROPERTY---------------*/
         grid-area: logo;
@@ -506,41 +506,38 @@ a{
             "header"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 5fr 1fr 0fr;
+        grid-template-rows: 0fr 0fr 0fr 0fr;
     }
     .shop__container{
         grid-area: shop__container;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .shop__container-items{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 2rem;
-        padding: 2rem;
         gap: 2rem;
-        justify-content: center;
-        background-color: #FFFFFF;
-        border-radius: 1rem;
+        margin: 2rem 0;
+        margin-top: 0;
     }
-    .shop-item{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 2.5rem;
-        font-weight: 700;
-        text-align: center;
-        width: min-content;
-        height: 20rem;
-        border: solid var(--violet9z) 0.4rem;
-        border-radius: 1rem;
-        color: var(--violet9z);
+    .card-shop{
         padding: 2rem;
         border-radius: 1rem;
     }
+    .card-title{
+        color: var(--violet9z);
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .card-text{
+        color: var(--violet9z);
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .btn{
+        font-size: 2rem;
+        background-color: var(--violet9z);
+        border: none;
+    }
 
-
+    
     /*-------------------ABOUT-------------------*/
     .body__about{
         display: grid;
@@ -1001,17 +998,22 @@ a{
         grid-template-rows: 1fr 5fr 2.5fr;
     }
     .shop__container{
-        justify-content: center;
+        margin: 2rem;
     }
-    .shop__container-items{
+    .card-shop{
         background-color: var(--violet9z);
     }
-    .shop-item{
-        height: 30rem;
-        border-color: #FFFFFF;
+    .card-title{
         color: #FFFFFF;
     }
-
+    .card-text{
+        color: #FFFFFF;
+    }
+    .btn{
+        background-color: transparent;
+        border: solid #FFFFFF .2rem;
+        color: #FFFFFF;
+    }
 
     /*-------------------ABOUT US-------------------*/
     .body__about{
@@ -1105,7 +1107,7 @@ a{
             "footer footer"
         ;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 0fr 0fr 0fr 1fr .5fr;   
+        grid-template-rows: 0fr 0fr 0fr 1fr 0fr;   
     }
     .header{
         grid-area: header;
@@ -1142,6 +1144,7 @@ a{
         grid-area: last-match;
         justify-content: flex-start;
         padding: 0;
+        margin: 0;
     }
     .last-match__item{
         width: 60%;
@@ -1340,18 +1343,33 @@ a{
 
     /*----------SHOP----------*/ 
     .body__shop{
-        grid-template-rows: 1fr 5fr 2fr;
+        grid-template-rows: 0fr 5fr 2fr;
+        align-items: center;
+        justify-items: center;
     }
-    .shop-item{
-        height: 50rem;
-        transition: all .2s;
+    .card-shop{
+        background-color: var(--violet9z);
+        padding: 2rem;
+        border-radius: 1rem;
+        transition: all 2s;
     }
-   .shop-item:hover{
-        transform: translateY(-3rem);
+    .card-img-top{
+        width: 100%;
+    }
+    .card-title{
+        font-size: 4rem;
+    }
+    .card-text{
+        font-size: 2rem;
+    }
+    .btn{
+        font-size: 2rem;
+        background-color: transparent;
+        color: #FFFFFF;
+    }
+    .btn:hover{
         background-color: #FFFFFF;
         color: var(--violet9z);
-        border-color: var(--violet9z);
-        cursor: pointer;
     }
 
 
