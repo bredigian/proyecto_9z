@@ -34,12 +34,11 @@ a{
             "news"
             "last-match"
             "shop"
-            "more-news"
             "footer"
             "header"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 2fr 2fr 4fr 1fr 0fr;
+        grid-template-rows: 0fr 0fr 0fr 1fr 1fr 0fr;
     }
     .top-logo{ /*---------------GENERAL PROPERTY---------------*/
         grid-area: logo;
@@ -93,28 +92,10 @@ a{
         border-radius: 1rem;
     }
     .news{
-        grid-area: news;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        background-image: url(./img/news/lol_newTeam.jpeg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top center;
-        margin: 0 2rem;
-        border-radius: 1rem;
+        padding: 2rem;
     }
-    .news-title{
-        width: 100%;
-        font-weight: 700;
-        background-color: #FFFFFF;
-        color: var(--violet9z);
-        text-align: center;
-        border-bottom-left-radius: 1rem;
-        border-bottom-right-radius: 1rem;
-        font-size: 1.5rem;
-        padding: 1rem;
+    .carousel-inner{
+        border-radius: 1rem;
     }
     .last-match{
         grid-area: last-match;
@@ -194,10 +175,11 @@ a{
         border-radius: 1rem;
         padding: 1rem;
         width: 100%;
+        height: 100%;
     }
     .shop__item{
-        width: 10rem;
-        height: 20rem;
+        width: 30%;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -785,15 +767,14 @@ a{
         display: grid;
         grid-template-areas: 
             "header"
-            "news "
+            "news"
             "last-match" 
             "next-matches"
             "shop"
-            "more-news"
             "footer"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 0fr 1fr 1fr 2fr 2fr 2fr 1fr;
+        grid-template-rows: 0fr 0fr 0fr 0fr 1fr .5fr;
     }
     .header{
         grid-area: header;
@@ -815,15 +796,18 @@ a{
     }
     .news{
         grid-area: news;
-        margin-top: 2rem;
     }
-    .news-title{
-        background-color: var(--violet9z);
-        color: #FFFFFF;
+    .news-description{
+        font-size: 1.5rem;
+        font-weight: 700;
+        background-color: #FFFFFF;
+        color: var(--violet9z);
+        padding: 1rem;
     }
     .last-match{
         grid-area: last-match;
         justify-content: center;
+        padding: 5rem 0;
     }
     .last-match__item{
         width: 75%;
@@ -852,6 +836,7 @@ a{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 5rem 0;
     }
     .next-matches__container{
         display: flex;
@@ -1117,11 +1102,10 @@ a{
             "news news"
             "last-match next-matches"
             "shop shop"
-            "more-news more-news"
             "footer footer"
         ;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 0fr 1fr 2fr 2fr 2fr .5fr;
+        grid-template-rows: 0fr 0fr 0fr 1fr .5fr;   
     }
     .header{
         grid-area: header;
@@ -1146,15 +1130,18 @@ a{
     }
     .news{
         grid-area: news;
+        transform: scale(.80);
         transition: all .2s;
+        margin: 0;
+        padding: 0;
     }
-    .news:hover{
-        transform: scale(.95);
+    .news-description{
+        font-size: 3rem;
     }
     .last-match{
         grid-area: last-match;
         justify-content: flex-start;
-        margin-top: 2rem;
+        padding: 0;
     }
     .last-match__item{
         width: 60%;
@@ -1170,7 +1157,7 @@ a{
     }
     .next-matches{
         grid-area: next-matches;
-        margin-top: 2rem;
+        padding: 0;
     }
     .next-matches__container{
         width: 60%;
@@ -1181,7 +1168,7 @@ a{
     .shop{
         grid-area: shop;
         justify-content: center;
-        margin-top: 2rem;
+        padding: 0;
     }
     .shop__items{
         width: 85%;
@@ -1446,8 +1433,6 @@ a{
         grid-area: footer;
         background-color: var(--violet9z);
         font-size: 2rem;
-        display: flex;
-        justify-content: space-between;
         width: 100%;
         height: 100%;
     }
