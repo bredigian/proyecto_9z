@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../img/9z-white.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a2a3781daf.js" crossorigin="anonymous"></script>
@@ -31,200 +32,178 @@
             </ul>
         </nav>
     </header>
-    <div class="matches__last matches">
-        <div class="matches-title title">LAST MATCHES</div>
-        <div class="matches-container">
-            <div class="matches-item flex">
-                <div class="item-game">
-                    <img class="logo-game" src="../img/games/ico's/csgo.webp" alt="">
-                    <span class="item-date">10 May 2022</span>
+    <!--LAST MATCHES-->
+    <div class="last__matches d-flex flex-column align-items-center w-100 gap-5">
+        <div class="title">LAST MATCHES</div>
+        <div class="match-item p-4 bd-highlight d-flex">
+            <div class="data-game d-flex align-items-center flex-grow-1 gap-2">
+                <img src="../img/games/ico's/csgo.webp" alt="" class="data-game__ico">
+                <div class="data-game__info">5 Jun 2022</div>
+            </div>
+            <div class="opponents d-flex justify-content-around gap-3">
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="../img/9z.png" alt="" class="opponent-img">
+                    <div class="opponent-name">9z</div>
                 </div>
-                <div class="item-opponents flex">
-                    <div class="opponent flex">
-                        <div class="opponent__img">
-                           <img src="../img/9z.png" alt="">
-                        </div>
-                        <div class="opponent__name">9z</div>
-                    </div>
-                    <div class="scores flex">
-                        <div class="scores-score">0</div>
-                        <div class="scores-separator">x</div>
-                        <div class="scores-score">2</div>
-                    </div>
-                    <div class="opponent flex">
-                        <div class="opponent__name">Liquid Team</div>
-                        <div class="opponent__img">
-                            <img src="../img/ico_teams/liquid.svg" alt="">
-                        </div>
-                    </div>
+                <div class="scores d-flex align-items-center gap-2">
+                    <div class="scores-score">0</div>
+                    <div class="scores-separator">x</div>
+                    <div class="scores-score">2</div>
+                </div>
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="../img/ico_teams/g2.webp" alt="" class="opponent-img">
+                    <div class="opponent-name">G2 Esports</div>
                 </div>
             </div>
-            <div class="matches-item flex">
-                <div class="item-game">
-                    <img class="logo-game" src="../img/games/ico's/csgo.webp" alt="">
-                    <span class="item-date">8 May 2022</span>
+        </div>
+        <div class="match-item p-4 bd-highlight d-flex">
+            <div class="data-game d-flex align-items-center flex-grow-1 gap-2">
+                <img src="../img/games/ico's/valorant.jpg" alt="" class="data-game__ico">
+                <div class="data-game__info">4 Jun 2022</div>
+            </div>
+            <div class="opponents d-flex justify-content-around gap-3">
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="../img/9z.png" alt="" class="opponent-img">
+                    <div class="opponent-name">9z</div>
                 </div>
-                <div class="item-opponents flex">
-                    <div class="opponent flex">
-                        <div class="opponent__img">
-                            <img src="../img/9z.png" alt="">
-                        </div>
-                        <div class="opponent__name">9z</div>
-                    </div>
-                    <div class="scores flex">
-                        <div class="scores-score">14</div>
-                        <div class="scores-separator">-</div>
-                        <div class="scores-score">16</div>
-                    </div>
-                    <div class="opponent flex">
-                        <div class="opponent__name">MIBR</div>
-                        <div class="opponent__img">
-                            <img id="logo-mibr" src="../img/ico_teams/mibr-white.png" alt="">
-                        </div>
-                    </div>
+                <div class="scores d-flex align-items-center gap-2">
+                    <div class="scores-score">3</div>
+                    <div class="scores-separator">x</div>
+                    <div class="scores-score">0</div>
+                </div>
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="../img/ico_teams/leviatan.webp" alt="" class="opponent-img">
+                    <div class="opponent-name">Leviatan</div>
                 </div>
             </div>
-            <div class="matches-item flex">
-                <div class="item-game">
-                    <img class="logo-game" src="../img/games/ico's/csgo.webp" alt="">
-                    <span class="item-date">9 May 2022</span>
+        </div>
+        <div class="match-item p-4 bd-highlight d-flex">
+            <div class="data-game d-flex align-items-center flex-grow-1 gap-2">
+                <img src="../img/games/ico's/lol.png" alt="" class="data-game__ico">
+                <div class="data-game__info">3 Jun 2022</div>
+            </div>
+            <div class="opponents d-flex justify-content-around gap-3">
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="../img/9z.png" alt="" class="opponent-img">
+                    <div class="opponent-name">9z</div>
                 </div>
-                <div class="item-opponents flex">
-                    <div class="opponent flex">
-                        <div class="opponent__img">
-                            <img src="../img/ico_teams/ence.png" alt="">
-                        </div>
-                        <div class="opponent__name">ENCE</div>
-                    </div>
-                    <div class="scores flex">
-                        <div class="scores-score">8</div>
-                        <div class="scores-separator">-</div>
-                        <div class="scores-score">16</div>
-                    </div>
-                    <div class="opponent flex">
-                        <div class="opponent__name">9z</div>
-                        <div class="opponent__img">
-                            <img src="../img/9z.png" alt="">
-                        </div>
-                    </div>
+                <div class="scores d-flex align-items-center gap-2">
+                    <div class="scores-score">3</div>
+                    <div class="scores-separator">x</div>
+                    <div class="scores-score">2</div>
+                </div>
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="../img/ico_teams/liquid.svg" alt="" class="opponent-img">
+                    <div class="opponent-name">Liquid Team</div>
                 </div>
             </div>
-            <div class="matches-item flex">
-                <div class="item-game">
-                    <img class="logo-game" src="../img/games/ico's/valorant.jpg" alt="">
-                    <span class="item-date">6 May 2022</span>
+        </div>
+        <div class="match-item p-4 bd-highlight d-flex">
+            <div class="data-game d-flex align-items-center flex-grow-1 gap-2">
+                <img src="../img/games/ico's/csgo.webp" alt="" class="data-game__ico">
+                <div class="data-game__info">1 Jun 2022</div>
+            </div>
+            <div class="opponents d-flex justify-content-around gap-3">
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="../img/9z.png" alt="" class="opponent-img">
+                    <div class="opponent-name">9z</div>
                 </div>
-                <div class="item-opponents flex">
-                    <div class="opponent flex">
-                        <div class="opponent__img">
-                            <img src="../img/ico_teams/kru.webp" alt="">
-                        </div>
-                        <div class="opponent__name">KRÜ</div>
-                    </div>
-                    <div class="scores flex">
-                        <div class="scores-score">0</div>
-                        <div class="scores-separator">x</div>
-                        <div class="scores-score">2</div>
-                    </div>
-                    <div class="opponent flex">
-                        <div class="opponent__name">9z</div>
-                        <div class="opponent__img">
-                            <img src="../img/9z.png" alt="">
-                        </div>
-                    </div>
+                <div class="scores d-flex align-items-center gap-2">
+                    <div class="scores-score">0</div>
+                    <div class="scores-separator">x</div>
+                    <div class="scores-score">2</div>
+                </div>
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="../img/ico_teams/faze.svg" alt="" class="opponent-img">
+                    <div class="opponent-name">FaZe Clan</div>
                 </div>
             </div>
-            <div class="matches-item flex">
-                <div class="item-game">
-                    <img class="logo-game" src="../img/games/ico's/lol.png" alt="">
-                    <span class="item-date">31 Apr 2022</span>
+        </div>
+        <div class="match-item p-4 bd-highlight d-flex">
+            <div class="data-game d-flex align-items-center flex-grow-1 gap-2">
+                <img src="../img/games/ico's/csgo.webp" alt="" class="data-game__ico">
+                <div class="data-game__info">29 May 2022</div>
+            </div>
+            <div class="opponents d-flex justify-content-around gap-3">
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="../img/9z.png" alt="" class="opponent-img">
+                    <div class="opponent-name">9z</div>
                 </div>
-                <div class="item-opponents flex">
-                    <div class="opponent flex">
-                        <div class="opponent__img">
-                            <img src="../img/9z.png" alt="">
-                        </div>
-                        <div class="opponent__name">9z</div>
-                    </div>
-                    <div class="scores flex">
-                        <div class="scores-score">3</div>
-                        <div class="scores-separator">x</div>
-                        <div class="scores-score">0</div>
-                    </div>
-                    <div class="opponent flex">
-                        <div class="opponent__name">Leviatan</div>
-                        <div class="opponent__img">
-                            <img src="../img/ico_teams/leviatan.webp" alt="">
-                        </div>
-                    </div>
+                <div class="scores d-flex align-items-center gap-2">
+                    <div class="scores-score">16</div>
+                    <div class="scores-separator">-</div>
+                    <div class="scores-score">12</div>
+                </div>
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="../img/ico_teams/ence.png" alt="" class="opponent-img">
+                    <div class="opponent-name">ENCE</div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="matches__next matches">
-        <div class="matches-title title">NEXT MATCHES</div>
-        <div class="matches-container">
-            <div class="matches-item">
-                <div class="item-game">
-                    <img class="logo-game" src="../img/games/ico's/csgo.webp" alt="">
+    <!--NEXT MATCHES-->
+    <div class="next__matches d-flex flex-column align-items-center w-100 gap-5">
+        <div class="title">NEXT MATCHES</div>
+        <div class="match-item p-4 bd-highlight d-flex">
+            <div class="data-game d-flex align-items-center flex-grow-1 gap-2">
+                <img src="../img/games/ico's/csgo.webp" alt="" class="data-game__ico">
+                <div class="data-game__info">10 Jun 2022</div>
+            </div>
+            <div class="opponents d-flex justify-content-around gap-3">
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="../img/9z.png" alt="" class="opponent-img">
+                    <div class="opponent-name">9z</div>
                 </div>
-                <span class="item-date">COMING SOON...</span>
-                <div class="item-opponents">
-                    <div class="opponent">
-                        <img src="" alt="">
-                        <div class="opponent__name"></div>
-                    </div>
-                    <div class="scores">
-                        <div class="scores-score"></div>
-                        <div class="scores-separator"></div>
-                        <div class="scores-score"></div>
-                    </div>
-                    <div class="opponent">
-                        <img src="" alt="">
-                        <div class="opponent__name"></div>
-                    </div>
+                <div class="scores d-flex align-items-center gap-2">
+                    <div class="scores-score"></div>
+                    <div class="scores-separator">VS</div>
+                    <div class="scores-score"></div>
+                </div>
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="../img/ico_teams/faze.svg" alt="" class="opponent-img">
+                    <div class="opponent-name">FaZe Clan</div>
                 </div>
             </div>
-            <div class="matches-item">
-                <div class="item-game">
-                    <img class="logo-game" src="../img/games/ico's/valorant.jpg" alt="">
+        </div>
+        <div class="match-item p-4 bd-highlight d-flex">
+            <div class="data-game d-flex align-items-center flex-grow-1 gap-2">
+                <img src="../img/games/ico's/lol.png" alt="" class="data-game__ico">
+                <div class="data-game__info">15 Jun 2022</div>
+            </div>
+            <div class="opponents d-flex justify-content-around gap-3">
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="../img/9z.png" alt="" class="opponent-img">
+                    <div class="opponent-name">9z</div>
                 </div>
-                <span class="item-date">COMING SOON...</span>
-                <div class="item-opponents">
-                    <div class="opponent">
-                        <img src="" alt="">
-                        <div class="opponent__name"></div>
-                    </div>
-                    <div class="scores">
-                        <div class="scores-score"></div>
-                        <div class="scores-separator"></div>
-                        <div class="scores-score"></div>
-                    </div>
-                    <div class="opponent">
-                        <img src="" alt="">
-                        <div class="opponent__name"></div>
-                    </div>
+                <div class="scores d-flex align-items-center gap-2">
+                    <div class="scores-score"></div>
+                    <div class="scores-separator">VS</div>
+                    <div class="scores-score"></div>
+                </div>
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="../img/ico_teams/leviatan.webp" alt="" class="opponent-img">
+                    <div class="opponent-name">Leviatan</div>
                 </div>
             </div>
-            <div class="matches-item">
-                <div class="item-game">
-                    <img class="logo-game" src="../img/games/ico's/lol.png" alt="">
+        </div>
+        <div class="match-item p-4 bd-highlight d-flex">
+            <div class="data-game d-flex align-items-center flex-grow-1 gap-2">
+                <img src="../img/games/ico's/valorant.jpg" alt="" class="data-game__ico">
+                <div class="data-game__info">20 Jun 2022</div>
+            </div>
+            <div class="opponents d-flex justify-content-around gap-3">
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="../img/9z.png" alt="" class="opponent-img">
+                    <div class="opponent-name">9z</div>
                 </div>
-                <span class="item-date">COMING SOON...</span>
-                <div class="item-opponents">
-                    <div class="opponent">
-                        <img src="" alt="">
-                        <div class="opponent__name"></div>
-                    </div>
-                    <div class="scores">
-                        <div class="scores-score"></div>
-                        <div class="scores-separator"></div>
-                        <div class="scores-score"></div>
-                    </div>
-                    <div class="opponent">
-                        <img src="" alt="">
-                        <div class="opponent__name"></div>
-                    </div>
+                <div class="scores d-flex align-items-center gap-2">
+                    <div class="scores-score"></div>
+                    <div class="scores-separator">VS</div>
+                    <div class="scores-score"></div>
+                </div>
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="../img/ico_teams/kru.webp" alt="" class="opponent-img">
+                    <div class="opponent-name">KRÜ</div>
                 </div>
             </div>
         </div>
@@ -244,5 +223,6 @@
         </div>
         <div class="footer__text">All rights reserved. Copyright 2022.</div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

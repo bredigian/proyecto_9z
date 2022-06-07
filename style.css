@@ -260,86 +260,57 @@ a{
         display: grid;
         grid-template-areas: 
             "logo"
-            "last "
+            "last"
             "next"
             "footer"
             "header"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: .5fr 2.5fr 1.5fr 1fr 0fr;
+        grid-template-rows: auto;
     }
-    .matches{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
-    .flex{
-        display: flex;
-    }
-    .matches__last{
+    .last__matches{
         grid-area: last;
     }
-    .matches-container{
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .matches-item{
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        background-color: #FFFFFF;
-        padding: 1.5rem;
-        gap: 1.5rem;
+    .match-item{
         border-radius: 1rem;
+        width: 90%;
     }
-    .item-game{
-        display: flex;
-        align-items: center;
-        gap: 2rem;
+    .data-game__ico{
+        width: 3rem;
     }
-    .item-date{
-        font-size: 1rem;
-        font-weight: 700;
-    }
-    .item-opponents{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        justify-content: space-evenly;
-        gap: 1rem;
-    }
-    .opponent{
-        align-items: center;
-        gap: 2rem;
-    }
-    .opponent__name{
-        font-size: 2rem;
-        width: min-content;
-        font-weight: 700;
-    }
-    .scores{
-        display: flex;
-        font-size: 2rem;
-        gap: .4rem;
-        font-weight: 700;
-    }
-    .logo-game{
-        width: 2rem;
-        height: 2.rem;
-    }
-    .opponent__img img{
+    .data-game__info{
         width: 4rem;
-        height: 4rem;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .opponent-img{
+        height: 5rem;
+        width: 5rem;
+    }
+    .opponent-name{
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    .match-item{
+        background-color: #FFFFFF;
+    }
+    .scores-score{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .scores-separator{
+        font-size: 2rem;
+        font-weight: 700;
     }
     #logo-mibr{
         width: 6rem;
         height: 3rem;
     }
-    .matches__next{
+    .next__matches{
         grid-area: next;
-        justify-content: center;
+        margin: 3rem 0;
     }
 
 
@@ -734,7 +705,6 @@ a{
         grid-template-rows: auto;
     }
     .header{
-        grid-area: header;
         background-color: var(--violet9z);
         border-radius: 0%;
         box-shadow: none;
@@ -835,31 +805,25 @@ a{
         display: grid;
         grid-template-areas: 
             "header"
-            "matchesLast"
-            "matchesNext"
+            "last"
+            "next"
             "footer"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 3fr 2fr 2fr;
+        grid-template-rows: auto;
     }
-    .header{
-        grid-area: header;
+    .last__matches{
+        margin-top: 3rem;
     }
-    .matches__last{
-        grid-area: matchesLast;
-    }
-    .matches__next{
-        grid-area: matchesNext;
-    }
-    .footer{
-        grid-area: footer;
-    }
-    .matches-container{
-        min-width: 40%;
-    }
-    .matches-item{
+    .match-item{
         background-color: var(--violet9z);
         color: #FFFFFF;
+    }
+    .opponents{
+        gap: 5rem !important;
+    }
+    .scores{
+        gap: 1rem !important;
     }
 
 
@@ -1150,41 +1114,44 @@ a{
             "footer footer"
         ;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 1fr 5fr 2fr;
+        grid-template-rows: auto
     }
-    .header{
-        grid-area: header;
+    .last__matches{
+        margin-bottom: 3rem;
     }
-    .matches__last{
-        grid-area: last;
-        margin-top: 6rem;
-        justify-content: flex-start;
-    }
-    .matches__next{
-        grid-area: next;
-        margin-top: 6rem;
-        justify-content: flex-start;
-    }
-    .matches__next .item-date{
-        font-size: 1.5rem;
-        width: 100% ;
-    }
-    .matches-container{
-        min-width: 70%;
-    }
-    .matches-item{
-        height: 8rem;
+    .match-item{
+        border: solid transparent .2rem;
         transition: all .2s;
     }
-    .matches-item:hover{
-        transform: translateX(5rem);
+    .match-item:hover{
+        background-color: transparent;
+        backdrop-filter: blur(.5rem);
+        color: var(--violet9z);
+        border-color: var(--violet9z);
         cursor: pointer;
     }
-    .matches__next .matches-item:hover{
-        transform: translateX(-5rem);
+    .data-game__ico{
+        width: 5rem;
     }
-    .footer{
-        grid-area: footer;
+    .data-game__info{
+        font-size: 2rem;
+        width: 7rem;
+    }
+    .opponents{
+        gap: 3rem !important;
+    }
+    .opponent-img{
+        width: 7rem;
+        height: 7rem;
+    }
+    .opponent-name{
+        font-size: 2rem;
+    }
+    .scores-score{
+        font-size: 5rem;
+    }
+    .scores-separator{
+        font-size: 4rem;
     }
 
 
