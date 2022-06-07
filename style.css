@@ -162,56 +162,16 @@ a{
         margin: 2rem;
         margin-top: 0;
     }
+    .card-img-index{
+        width: 10rem;
+    }
     .title{
         font-size: 2rem;
         color: #FFFFFF;
         border-bottom: solid #FFFFFF 0.3rem;
     }
-    .shop__items{
-        display: flex;
-        justify-content: space-around;
-        gap: 2rem;
-        background-color: #FFFFFF;
-        border-radius: 1rem;
-        padding: 1rem;
-        width: 100%;
-        height: 100%;
-    }
-    .shop__item{
-        width: 30%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: solid var(--violet9z) 0.3rem;
-        border-radius: 1rem;
-    }
-    .shop__item-description{
-        font-size: 2rem;
-        color: var(--violet9z);
-        text-align: center;
-        font-weight: 700;
-    }
-    .more__news{
-        grid-area: more-news;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 3rem;
-        margin-bottom: 3rem;
-    }
-    .more__news-item{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .more__news-item img{
-        height: 20rem;
-        border-top-left-radius: 1rem;
-        border-top-right-radius: 1rem;
-    }
+
+    
     .footer{ /*---------------GENERAL PROPERTY---------------*/
         grid-area: footer;
         background-color: #FFFFFF;
@@ -771,7 +731,7 @@ a{
             "footer"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 0fr 0fr 0fr 0fr 1fr .5fr;
+        grid-template-rows: auto;
     }
     .header{
         grid-area: header;
@@ -848,25 +808,12 @@ a{
         padding: 2rem;
         border-radius: 1rem;
     }
+    .twitter{
+        display: none;
+    }
     .shop{
         grid-area: shop;
         padding: 5rem 0;
-    }
-    .shop__items{
-        background-color: var(--violet9z);
-        height: 100%;
-        padding: 2rem;
-    }
-    .shop__item{
-        border-color: #FFFFFF;
-        width: 30%;
-        height: 100%;
-    }
-    .shop__item-description{
-        color: #FFFFFF;
-    }
-    .more__news{
-        grid-area: more-news;
     }
     .footer{
         grid-area: footer;
@@ -1103,11 +1050,11 @@ a{
             "header header"
             "news news"
             "last-match next-matches"
-            "shop shop"
+            "twitter shop"
             "footer footer"
         ;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 0fr 0fr 0fr 1fr 0fr;   
+        grid-template-rows: 0fr 0fr 0fr 1fr 0fr;
     }
     .header{
         grid-area: header;
@@ -1173,27 +1120,17 @@ a{
         justify-content: center;
         padding: 0;
     }
-    .shop__items{
-        width: 85%;
-        height: 75%;
-        padding: 4rem;
+    .twitter{
+        grid-area: twitter;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .shop__item{
-        transition: all .2s;
-    }
-    .shop__item:hover{
-        transform: translateY(-1rem);
-        cursor: pointer;
-    }
-    .more__news{
-        grid-area: more-news;
-        gap: 5rem;
-    }
-    .more__news-item{
-        transition: all .2s;
-    }
-    .more__news-item:hover{
-        transform: scale(1.05);
+    .twitter__container{
+        border: solid var(--violet9z) .5rem;
+        width: 75%;
+        border-radius: 1rem;
     }
     .footer{
         grid-area: footer;
@@ -1470,5 +1407,8 @@ a{
     }
     .footer__social i{
         font-size: 3rem;
+    }
+    .more__sections a:hover{
+        color: #FFFFFF;
     }
 }
