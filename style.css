@@ -38,7 +38,7 @@ a{
             "header"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 0fr 0fr 0fr 1fr 0fr 0fr;
+        grid-template-rows: auto;
     }
     .top-logo{ /*---------------GENERAL PROPERTY---------------*/
         grid-area: logo;
@@ -99,71 +99,33 @@ a{
     }
     .last-match{
         grid-area: last-match;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        margin: 2rem;
-        margin-top: 0;
     }
-    .match-info{
-        display: flex;
-        justify-content: space-between;
-        color: var(--violet9z);
+    .last-match__item{
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+    }
+    .info{
         font-size: 1.5rem;
         font-weight: 700;
     }
-    .game-info{
-        border: solid var(--violet9z) 0.25rem;
-        border-radius: 1rem;
-        padding: .5rem;
-        margin: .5rem;
-        height: fit-content;
-        text-align: center;
+    .last-match .opponent-img{
+        width: 7rem;
+        height: 7rem;
     }
-    .last-match__item{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        background-color: #FFFFFF;
-        padding: 2rem;
-        border-radius: 1rem;
-        gap: 2rem;
+    .last-match .opponent-name{
+        font-size: 2rem;
     }
-    .flex{
-        display: flex;
+    .last-match .scores-score{
+        font-size: 4rem;
     }
-    .match-container{
-        align-items: center;
-        justify-content: space-around;
-    }
-    .opponent-img{
-        width: 8rem;
-        height: 8rem;
-    }
-    .score{
+    .last-match .scores-separator{
         font-size: 3rem;
-        font-weight: 700;
-        gap: 2rem;
-        width: 100%;
-        justify-content: center;
-    }
-    .next-matches{
-        display: none;
-    }
-    .shop{
-        grid-area: shop;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 2rem;
-        margin: 2rem;
-        margin-top: 0;
     }
     .card-img-index{
         width: 10rem;
+    }
+    .shop{
+        margin: 2rem 0;
     }
     .title{
         font-size: 2rem;
@@ -721,9 +683,6 @@ a{
         transition: all .2s;
         font-weight: 700;
     }
-    .news{
-        grid-area: news;
-    }
     .news-description{
         font-size: 1.5rem;
         font-weight: 700;
@@ -731,13 +690,12 @@ a{
         color: var(--violet9z);
         padding: 1rem;
     }
-    .last-match{
-        grid-area: last-match;
-        justify-content: center;
-        padding: 5rem 0;
-    }
     .last-match__item{
-        width: 75%;
+        background-color: var(--violet9z);
+        color: #FFFFFF;
+    }
+    .data{
+        gap: 5rem !important;
     }
     .title{
         padding: 1rem;
@@ -747,43 +705,33 @@ a{
         border-radius: 1rem;
         border-bottom: none;
     }
-    .item{
-        background-color: var(--violet9z);
-    }
-    .game-info{
-        color: #FFFFFF;
-        border: solid #FFFFFF 0.2rem;
-    }
-    .score{
-        color: #FFFFFF;
-    }
-    .next-matches{
-        grid-area: next-matches;
-        gap: 2rem;
+    .next-match{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 5rem 0;
+        width: 100%;
+        margin-top: 2rem;
     }
-    .next-matches__container{
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        width: 72%;
-    }
-    .next-matches__item{
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        padding: 2rem;
+    .next-match__item{
+        background-color:var(--violet9z);
+        color: #FFFFFF;
         border-radius: 1rem;
+    }
+    .next-match .opponent-img{
+        width: 7rem;
+        height: 7rem;
+    }
+    .next-match .opponent-name{
+        font-size: 2rem;
+    }
+    .next-match .scores-separator{
+        font-size: 3rem;
     }
     .twitter{
         display: none;
     }
     .shop{
         grid-area: shop;
-        padding: 5rem 0;
     }
     .footer{
         grid-area: footer;
@@ -1044,45 +992,46 @@ a{
     .news{
         grid-area: news;
         transform: scale(.80);
-        transition: all .2s;
         margin: 0;
         padding: 0;
     }
     .news-description{
         font-size: 3rem;
     }
-    .last-match{
-        grid-area: last-match;
-        justify-content: flex-start;
-        padding: 0;
+    .info{
+        font-size: 2rem;
+    }
+    .last-match .opponent-img{
+        width: 10rem;
+        height: 10rem;
+    }
+    .last-match .opponent-name{
+        font-size: 3rem;
+    }
+    .next-match .opponent-img{
+        width: 10rem;
+        height: 10rem;
+    }
+    .next-match .opponent-name{
+        font-size: 3rem;
+    }
+    .last-match .scores-score{
+        font-size: 5rem;
+    }
+    .last-match .scores-separator{
+        font-size: 4rem;
+    }
+    .next-match .scores-separator{
+        font-size: 4rem;
+    }
+    .next-match{
         margin: 0;
-    }
-    .last-match__item{
-        width: 60%;
-    }
-    .item{
-        transition: all .1s;
-    }
-    .item:active{
-        transform: scale(.95);
-    }
-    .item:hover{
-        cursor: pointer;
-    }
-    .next-matches{
-        grid-area: next-matches;
-        padding: 0;
-    }
-    .next-matches__container{
-        width: 60%;
-    }
-    .next-matches__item{
-        width: 100%;
     }
     .shop{
         grid-area: shop;
-        justify-content: center;
-        padding: 0;
+    }
+    .card-img-index{
+        width: 25rem;
     }
     .twitter{
         grid-area: twitter;
@@ -1256,9 +1205,6 @@ a{
         padding: 2rem;
         border-radius: 1rem;
         transition: all 2s;
-    }
-    .card-img-top{
-        width: 100%;
     }
     .card-title{
         font-size: 4rem;
