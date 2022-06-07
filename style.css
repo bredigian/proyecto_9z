@@ -168,6 +168,7 @@ a{
         font-size: 2rem;
         font-weight: 700;
         color: var(--violet9z);
+        text-align: center;
     }
     .footer__social{ /*---------------GENERAL PROPERTY---------------*/
         width: 100%;
