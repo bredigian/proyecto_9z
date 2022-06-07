@@ -383,9 +383,11 @@ a{
     }
     .socialNetworks{
         font-size: 2rem;
-        color: var(--violet9z);
         display: flex;
         gap: 2rem;
+    }
+    .socialNetworks i{
+        color: var(--violet9z);
     }
 
 
