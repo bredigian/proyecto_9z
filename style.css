@@ -291,29 +291,14 @@ a{
             "header"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: .5fr 5fr 1fr 0fr;
-    }
-    .teams__container{
-        grid-area: teams;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .teams{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 2rem;
-        gap: 2rem;
+        grid-template-rows: auto;
     }
     .team__item{
         padding: 3rem;
         text-align: center;
         background-color: #FFFFFF;
-        border: solid #FFFFFF 0.5rem;
         border-radius: 1rem;
+        max-width: 43rem;
     }
     .team__img{
         width: 100%;
@@ -785,23 +770,15 @@ a{
             "teams"
             "footer"
         ;
-        grid-template-rows: 1fr 7fr 2fr;
+        grid-template-rows: auto;
     }
     .teams__container{
         grid-area: teams;
-    }
-    .teams{
-        width: 60%;
+        margin-top: 3rem;
     }
     .team__item{
         background-color: var(--violet9z);
-        border: none;
-        width: 100%;
-        height: 50%;
-    }
-    .team__img{
-        width: 100%;
-        height: 100%;
+        max-width: 53rem;
     }
 
 
@@ -1109,37 +1086,21 @@ a{
 
     /*----------TEAMS----------*/
     .body__teams{
-        grid-template-rows: 1fr 8fr 2fr;
-    }
-    .teams__container{
-        justify-content: flex-start;
-        align-items: center;
-        height: 100rem;
-        margin-top: 5rem;
-    }
-    .teams__title{
-        font-size: 2rem;
-        padding: 1rem;
-        background-color: var(--violet9z);
-        color: #FFFFFF;
-        font-weight: 700;
+        grid-template-rows: auto;
     }
     .teams{
-        flex-direction: row;
-        height: 100%;
-        width: 100%;
-        padding: 0;
+        flex-direction: row !important;
+        height: 75rem !important;
+        width: 100% !important;
+        justify-content: center;
     }
     .team__item{
+        height: 100%;
         width: 20%;
-        height: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         transition: all .2s;
     }
     .team__item:hover{
-        transform: scale(1.05);
+        transform: translateY(-2rem)
     }
     
     
