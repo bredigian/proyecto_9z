@@ -536,7 +536,7 @@ a{
             "header"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 2fr 1.5fr 1fr 0fr;
+        grid-template-rows: auto;
     }
     .contact-info{
         grid-area: contact-info;
@@ -544,6 +544,7 @@ a{
         flex-direction: column;
         align-items: center;
         margin: 0 3rem;
+        margin-bottom: 3rem;
         padding: 2rem;
         gap: 2rem;
         background-color: #FFFFFF;
@@ -563,33 +564,19 @@ a{
     }
     .contact-section{
         grid-area: contact-section;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
     }
     .contact-section__title{
         font-size: 3rem;
         font-weight: 700;
         color: #FFFFFF;
     }
-    .contact-section form{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
     .contact-section__data{
         font-size: 2rem;
         background-color: transparent;
         border: none;
+        outline: none;
         border-bottom: solid #FFFFFF 0.2rem;
         color: #FFFFFF;
-    }
-    .buttons{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 2rem;
     }
     .button{
         font-size: 2rem;
@@ -603,11 +590,8 @@ a{
     ::placeholder{
         color: #FFFFFF;
     }
-
-    @media (min-width: 480px) {
-        .body__contact{
-            grid-template-rows: 0.5fr 2fr 2fr 1fr 0fr;
-        }
+    ::placeholder:hover{
+        transform: translate(1rem);
     }
 }
 
@@ -904,7 +888,7 @@ a{
             "contact-section"
             "footer"
         ;
-        grid-template-rows: 1fr 3fr 3fr 2.5fr;
+        grid-template-rows: auto;
     }
     .contact-info{
         margin-top: 3rem;
@@ -1241,7 +1225,7 @@ a{
             "footer footer"
         ;
         grid-template-columns: 3fr 2fr;
-        grid-template-rows: 1fr 4fr 2fr;
+        grid-template-rows: 0fr 2fr 0fr;
         align-items: center;
     }
     .buttons{
