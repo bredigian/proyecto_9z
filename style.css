@@ -219,30 +219,8 @@ a{
         border-bottom-right-radius: 1rem;
         padding: 1rem;
     }
-    /*.news__container{
-        grid-area: news__container;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .news__container-items{
-        margin-top: 4rem;
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
-        width: 75%;
-        text-align: center;
-    }
-    .news-item{
-        font-size: 3rem;
-        color: var(--violet9z);
-        background-color: #FFFFFF;
-        border-radius: 1rem;
-        padding: 3rem;
-    }*/
 
-
+    
     /*-------------------MATCHES-------------------*/
     .body__matches{
         display: grid;
