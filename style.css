@@ -192,32 +192,35 @@ a{
             "header"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 4fr 1fr 0fr;
+        grid-template-rows: auto;
     }
     .news__container{
         grid-area: news__container;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        padding: 0 2rem;
     }
-    .news__container-items{
-        margin-top: 4rem;
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
-        width: 75%;
-        text-align: center;
+    .news-img{
+        width: 30rem;
+        height: 17rem;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
     }
-    .news-item{
-        font-size: 3rem;
-        color: var(--violet9z);
+    .news-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .news-item__text{
         background-color: #FFFFFF;
-        border-radius: 1rem;
-        padding: 3rem;
+        color: var(--violet9z);
+        text-align: center;
+        font-size: 1.5rem;
+        width: 30rem;
+        font-weight: 700;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        padding: 1rem;
     }
 
-
+    
     /*-------------------MATCHES-------------------*/
     .body__matches{
         display: grid;
@@ -291,29 +294,14 @@ a{
             "header"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: .5fr 5fr 1fr 0fr;
-    }
-    .teams__container{
-        grid-area: teams;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .teams{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 2rem;
-        gap: 2rem;
+        grid-template-rows: auto;
     }
     .team__item{
         padding: 3rem;
         text-align: center;
         background-color: #FFFFFF;
-        border: solid #FFFFFF 0.5rem;
         border-radius: 1rem;
+        max-width: 43rem;
     }
     .team__img{
         width: 100%;
@@ -445,46 +433,27 @@ a{
             "header"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 4fr 3.5fr 1fr 0fr;
+        grid-template-rows: auto;
     }
     .info-section{
         grid-area: info;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
     }
     .about-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         color: #FFFFFF;
         font-weight: 700;
     }
     .about-section__title{
         font-size: 4rem;
-        border-bottom: solid #FFFFFF 0.5rem;
+        border-bottom: solid #FFFFFF .4rem;
     }
     .about-section__text{
         text-align: center;
-        padding: 3rem;
-        margin: 3rem;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
+        margin: 0 3rem;
+        padding: 2rem;
+        font-size: 1.5rem;
         background-color: #FFFFFF;
         border-radius: 1rem;
         color: var(--violet9z);
-    }
-    .about-text{
-        font-size: 1.75rem;
-    }
-    .about-section__media{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
     }
     .info-ceo__img img{
         width: 30rem;
@@ -506,24 +475,12 @@ a{
     }
     .sponsors{
         grid-area: sponsors;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     .sponsors-title{
         font-size: 2.5rem;
         color: #FFFFFF;
         border-bottom: solid #FFFFFF 0.4rem;
         font-weight: 700;
-    }
-    .sponsors-img{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 4rem;
-        margin-top: 2rem;
     }
     .sponsor-logo{
         width: 10rem;
@@ -557,7 +514,7 @@ a{
             "header"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 2fr 1.5fr 1fr 0fr;
+        grid-template-rows: auto;
     }
     .contact-info{
         grid-area: contact-info;
@@ -565,6 +522,7 @@ a{
         flex-direction: column;
         align-items: center;
         margin: 0 3rem;
+        margin-bottom: 3rem;
         padding: 2rem;
         gap: 2rem;
         background-color: #FFFFFF;
@@ -584,33 +542,19 @@ a{
     }
     .contact-section{
         grid-area: contact-section;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
     }
     .contact-section__title{
         font-size: 3rem;
         font-weight: 700;
         color: #FFFFFF;
     }
-    .contact-section form{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
     .contact-section__data{
         font-size: 2rem;
         background-color: transparent;
         border: none;
+        outline: none;
         border-bottom: solid #FFFFFF 0.2rem;
         color: #FFFFFF;
-    }
-    .buttons{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 2rem;
     }
     .button{
         font-size: 2rem;
@@ -624,14 +568,8 @@ a{
     ::placeholder{
         color: #FFFFFF;
     }
-
-    @media (min-width: 480px) {
-        .body__contact{
-            grid-template-rows: 0.5fr 2fr 2fr 1fr 0fr;
-        }
-        .body__about{
-            grid-template-rows: 0.5fr 4fr 4fr 1fr 0fr;
-        }
+    ::placeholder:hover{
+        transform: translate(1rem);
     }
 }
 
@@ -785,23 +723,15 @@ a{
             "teams"
             "footer"
         ;
-        grid-template-rows: 1fr 7fr 2fr;
+        grid-template-rows: auto;
     }
     .teams__container{
         grid-area: teams;
-    }
-    .teams{
-        width: 60%;
+        margin-top: 3rem;
     }
     .team__item{
         background-color: var(--violet9z);
-        border: none;
-        width: 100%;
-        height: 50%;
-    }
-    .team__img{
-        width: 100%;
-        height: 100%;
+        max-width: 53rem;
     }
 
 
@@ -842,9 +772,12 @@ a{
             "news__container"
             "footer"
         ;
-        grid-template-rows: 1fr 5fr 2.5fr;
+        grid-template-rows: auto
     }
-    .news-item{
+    .news__container{
+        margin-top: 3rem;
+    }
+    .news-item__text{
         background-color: var(--violet9z);
         color: #FFFFFF;
     }
@@ -886,7 +819,10 @@ a{
             "footer "
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 6fr 2fr 2.5fr;
+        grid-template-rows: auto;
+    }
+    .info-section{
+        margin-top: 3rem;
     }
     .about-section__title{
         color: var(--violet9z);
@@ -895,6 +831,7 @@ a{
     .about-section__text{
         background-color: var(--violet9z);
         color: #FFFFFF;
+        font-size: 1.75rem;
     }
     .info-ceo__img{
         border: solid var(--violet9z) .5rem;
@@ -910,22 +847,14 @@ a{
         padding: 1rem;
         border-radius: 1rem;
     }
-    .sponsors{
-        justify-content: center;
-        gap: 2rem;
-    }
     .sponsors-title{
         color: var(--violet9z);
         border-color: var(--violet9z);
     }
     .sponsors-img{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 0 2rem;
         background-color: var(--violet9z);
-        border-radius: 1rem;
         padding: 3rem;
+        border-radius: 1rem;
     }
 
 
@@ -937,7 +866,7 @@ a{
             "contact-section"
             "footer"
         ;
-        grid-template-rows: 1fr 3fr 3fr 2.5fr;
+        grid-template-rows: auto;
     }
     .contact-info{
         margin-top: 3rem;
@@ -1109,37 +1038,21 @@ a{
 
     /*----------TEAMS----------*/
     .body__teams{
-        grid-template-rows: 1fr 8fr 2fr;
-    }
-    .teams__container{
-        justify-content: flex-start;
-        align-items: center;
-        height: 100rem;
-        margin-top: 5rem;
-    }
-    .teams__title{
-        font-size: 2rem;
-        padding: 1rem;
-        background-color: var(--violet9z);
-        color: #FFFFFF;
-        font-weight: 700;
+        grid-template-rows: auto;
     }
     .teams{
-        flex-direction: row;
-        height: 100%;
-        width: 100%;
-        padding: 0;
+        flex-direction: row !important;
+        height: 75rem !important;
+        width: 100% !important;
+        justify-content: center;
     }
     .team__item{
+        height: 100%;
         width: 20%;
-        height: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         transition: all .2s;
     }
     .team__item:hover{
-        transform: scale(1.05);
+        transform: translateY(-2rem)
     }
     
     
@@ -1186,14 +1099,22 @@ a{
 
      /*----------NEWS----------*/ 
      .body__news{
-        grid-template-rows: 1fr 5fr 2fr;
+        grid-template-rows: auto;
     }
      .news-item{
          transition: all .2s;
      }
      .news-item:hover{
-        transform: scale(1.1);
-        cursor: pointer;
+         transform: scale(1.05);
+         cursor: pointer;
+        }
+    .news-img{
+        width: 50rem;
+        height: 27rem;
+    }
+    .news-item__text{
+        width: 50rem;
+        font-size: 2rem;
     }
 
 
@@ -1229,10 +1150,11 @@ a{
     /*----------ABOUT----------*/ 
     .body__about{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 4fr 2fr 2fr;
+        grid-template-rows: auto;
     }
     .info-section{
-        flex-direction: row;
+        flex-direction: row !important;
+        align-items: flex-start !important;
         justify-content: space-evenly;
     }
     .about-section{
@@ -1246,8 +1168,11 @@ a{
     }
     .info-ceo__social a:hover{
         background-color: var(--violet9z);
-        padding:0;
+        padding: 0;
         transform: translateY(-.5rem);
+    }
+    .sponsors-img{
+        flex-direction: row !important;
     }
     #shell-logo{
         width: 6rem;
@@ -1278,7 +1203,7 @@ a{
             "footer footer"
         ;
         grid-template-columns: 3fr 2fr;
-        grid-template-rows: 1fr 4fr 2fr;
+        grid-template-rows: 0fr 2fr 0fr;
         align-items: center;
     }
     .buttons{
