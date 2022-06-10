@@ -33,6 +33,7 @@ a{
             "logo"
             "news"
             "last-match"
+            "carousel-next__matches"
             "shop"
             "footer"
             "header"
@@ -92,6 +93,7 @@ a{
         border-radius: 1rem;
     }
     .news{
+        grid-area: news;
         padding: 2rem;
     }
     .carousel-inner{
@@ -103,6 +105,7 @@ a{
     .last-match__item{
         background-color: #FFFFFF;
         border-radius: 1rem;
+        width: 100%;
     }
     .info{
         font-size: 1.5rem;
@@ -124,8 +127,25 @@ a{
     .card-img-index{
         width: 10rem;
     }
+    .carousel__next-matches{
+        grid-area: carousel-next__matches;
+        padding: 2rem;
+    }
+    .carousel__next-matches .carousel-item{
+        background-color: #FFFFFF;
+    }
+    .carousel__next-matches .opponent-img{
+        width: 7rem;
+        height: 7rem;
+    }
+    .carousel__next-matches .opponent-name{
+        font-size: 2rem;
+    }
+    .carousel__next-matches .scores-separator{
+        font-size: 3rem;
+    }
     .shop{
-        margin: 2rem 0;
+        grid-area: shop;
     }
     .title{
         font-size: 2rem;
@@ -583,7 +603,7 @@ a{
         background-position: center;
     }
     .only-mobile{
-        display: none;
+        display: none !important;
     }
     .li-word{
         display: block;
@@ -634,6 +654,7 @@ a{
     .last-match__item{
         background-color: var(--violet9z);
         color: #FFFFFF;
+        width: fit-content;
     }
     .data{
         gap: 5rem !important;
@@ -651,7 +672,6 @@ a{
         flex-direction: column;
         align-items: center;
         width: 100%;
-        margin-top: 2rem;
     }
     .next-match__item{
         background-color:var(--violet9z);
@@ -673,6 +693,7 @@ a{
     }
     .shop{
         grid-area: shop;
+        margin-top: 1.5rem;
     }
     .footer{
         grid-area: footer;
@@ -932,6 +953,9 @@ a{
     }
     .info{
         font-size: 2rem;
+    }
+    .last-match{
+        padding: 0 !important;
     }
     .last-match .opponent-img{
         width: 10rem;
