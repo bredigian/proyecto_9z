@@ -342,48 +342,37 @@ a{
             "header"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: .5fr 1fr 7fr 1fr 0fr;
+        grid-template-rows: auto;
     }
     .allTeam{
         grid-area: allTeam;
-        background-image: url(./img/teams/csgo/all_team_9z.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center top;
         margin: 0 2rem;
         text-align: center;
         border-radius: 1rem;
     }
     .allTeam__ico{
-        width: 8rem;
-        height: 4rem;
-        margin-top: 1rem;
+        width: 10rem;
+    }
+    .allTeam__img{
+        width: 100%;
+    }
+    .allTeam__img img{
+        width: 100%;
+        border-radius: 1rem;
     }
     .players{
         grid-area: players;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        justify-content: space-evenly;
+        padding: 0 2rem;
     }
     .player{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
         background-color: #FFFFFF;
-        margin: 0 3rem;
         border-radius: 1rem;
     }
     .player__img{
-        width: 15rem;
-        height: 15rem;
+        width: 18rem;
     }
-    .player__info{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
+    .player__img-valorant{
+        width: 15rem;
     }
     .player__info p{
         font-size: 4rem;
@@ -393,9 +382,7 @@ a{
         text-align: center;
     }
     .socialNetworks{
-        font-size: 2rem;
-        display: flex;
-        gap: 2rem;
+        font-size: 3rem;
     }
     .socialNetworks i{
         color: var(--violet9z);
@@ -766,19 +753,18 @@ a{
            "players"
            "footer"
         ;
-        grid-template-rows: 1fr 3fr 8fr 2fr;
     }
-    .allTeam{
-        grid-area: allTeam;
-        background-position: center top;
-        margin-top: 2rem;
-        border: solid var(--violet9z) 0.4rem;
+    .allTeam__ico{
+        width: 15rem;
     }
-    .players{
-        grid-area: players;
+    .allTeam__img img{
+        border: solid var(--violet9z) .4rem;
     }
     .player{
         background-color: var(--violet9z);
+    }
+    .player__img-aux{
+        padding: 1rem 0;
     }
     .player__info p{
         color: #FFFFFF;
@@ -1121,17 +1107,34 @@ a{
     
     /*----------CSGO VALORANT LOL----------*/
      .body__team{
-         grid-template-rows: 1fr 4fr 9fr 2fr;
          justify-items: center;
      }
    .allTeam{
-       border: solid var(--violet9z) .5rem;
-       width: 75%;
+       max-width: 1144px;
    }
-   .allTeam__ico{
-       width: 20rem;
-       height: 9rem;
+   .players{
+       flex-direction: row!important;
+       flex-wrap: wrap;
+       justify-content: center !important;
+       gap: 3rem !important;
    }
+   .player{
+       width: 315px !important;
+       height: 500px !important;
+       flex-direction: column;
+       transition: all .2s;
+       filter: brightness(.7);
+   }
+   .player__img{
+       width: 30rem;
+   }
+   .player:hover{
+       transform: translateY(-2rem);
+       background-image: url(./img/wallpaper9z.jpg);
+       background-position: center;
+       filter: brightness(1);
+   }
+   /*
    .players{
        display: flex;
        flex-direction: row;
@@ -1157,7 +1160,7 @@ a{
     }
     .socialNetworks a{
         color: var(--violet9z);
-    }
+    }*/
     
 
      /*----------NEWS----------*/ 
