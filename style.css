@@ -24,8 +24,12 @@ a{
     body{
         background-color: #23003f;
     }
-
-
+    .only-desktop{
+        display: none !important;
+    }
+    .tablet-desktop{
+        display: none !important;
+    }
     /*-------------------INDEX-------------------*/
     .body__index{
         display: grid;
@@ -82,12 +86,12 @@ a{
     .li-word{ /*---------------GENERAL PROPERTY---------------*/
         display: none;
     }
-    .fa-solid{ /*---------------GENERAL PROPERTY---------------*/
+    .only-mobile .fa-solid{ /*---------------GENERAL PROPERTY---------------*/
         font-size: 2.5rem;
         color: var(--violet9z);
         padding: 1rem;
     }
-    .fa-solid:hover{
+    .only-mobile .fa-solid:hover{
         background-color: var(--violet9z);
         color: #FFFFFF;
         border-radius: 1rem;
@@ -301,9 +305,6 @@ a{
 
 
     /*-------------------TEAMS-------------------*/
-    .only-desktop{
-        display: none;
-    }
 
     .body__teams{
         display: grid;
@@ -608,8 +609,8 @@ a{
     .li-word{
         display: block;
     }
-    .only-desktop{
-        display: block;
+    .tablet-desktop{
+        display: flex !important;
     }
 
 
@@ -657,7 +658,7 @@ a{
         width: fit-content;
     }
     .data{
-        gap: 5rem !important;
+        gap: 15rem !important;
     }
     .title{
         padding: 1rem;
@@ -909,6 +910,9 @@ a{
 
 /*-------------------DESKTOP QUERIE-------------------*/
 @media(min-width: 1200px){
+    .only-desktop{
+        display: flex !important;
+    }
     .body__index{
         display: grid;
         grid-template-areas: 
@@ -957,6 +961,12 @@ a{
     .last-match{
         padding: 0 !important;
     }
+    .last-match .opponents{
+        gap: 6rem !important;
+    }
+    .next-match__item .opponents{
+        gap: 6rem !important;
+    }
     .last-match .opponent-img{
         width: 10rem;
         height: 10rem;
@@ -976,6 +986,34 @@ a{
     }
     .last-match .scores-separator{
         font-size: 4rem;
+    }
+    .details{
+        transform: translateY(-30rem);
+        z-index: -1;
+        transition: .5s;
+        background-color: var(--violet9z);
+        color: #FFFFFF;
+        border-radius: 1rem;
+        transition: all 1s;
+        font-size: 1.5rem;
+    }
+    .ico-down{
+        color: var(--violet9z);
+        background-color: transparent;
+        border: none;
+        font-size: 3rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .ico-down::before{
+        transform: rotateX(0deg);
+    }
+    .ico-down:focus{
+        transform: rotateX(180deg);
+    }
+    .ico-down:focus ~ .details{
+        transform: translateY(0rem);
     }
     .next-match .scores-separator{
         font-size: 4rem;
