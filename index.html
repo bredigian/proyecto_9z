@@ -26,7 +26,7 @@
                 <a class="li-word" href="index.html"><li>HOME</li></a>
                 <a class="li-word" href="./sections/matches.html"><li>MATCHES</li></a>
                 <a class="li-word" href="./sections/teams.html"><li>TEAMS</li></a>
-                <a class="only-desktop" href="./index.html"><img class="header__logo" src="./img/9z.png" alt=" 9z Team"></a>
+                <a class="tablet-desktop" href="./index.html"><img class="header__logo" src="./img/9z.png" alt=" 9z Team"></a>
                 <a class="li-word" href="./sections/news.html"><li>NEWS</li></a>
                 <a class="li-word" href="./sections/shop.html"><li>SHOP</li></a>
                 <a class="li-word" href="./sections/about.html"><li>ABOUT US</li></a>
@@ -54,16 +54,8 @@
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
-    <div class="last-match d-flex flex-column align-items-center w-100 gap-4">
+    <div class="last-match d-flex flex-column align-items-center w-100 gap-4 p-4 pt-0">
         <div class="title">LAST MATCH</div>
         <div class="last-match__item p-4 d-flex flex-column align-items-center gap-3">
             <div class="data d-flex flex-row gap-3">
@@ -89,8 +81,174 @@
                 </div>
             </div>
         </div>
+        <button class="only-desktop ico-down">
+            <i class="ico-down fa-solid fa-angle-down p-3"></i>
+        </button>
+        <div class="only-desktop details d-flex flex-row p-4 gap-5">
+            <div class="details-team d-flex flex-column w-50 gap-3">
+                <div class="details-team__stats d-flex flex-row justify-content-center gap-4">
+                    <div class="stats fw-bold">Player</div>
+                    <div class="stats fw-bold">Kills</div>
+                    <div class="stats fw-bold">Deaths</div>
+                    <div class="stats fw-bold">Rating</div>
+                </div>
+                <div class="players-container d-flex flex-row justify-content-center gap-5">
+                    <div class="players-names d-flex flex-column">
+                        <div>dgt</div>
+                        <div>max</div>
+                        <div>dav1d</div>
+                        <div>Luken</div>
+                        <div>rox</div>
+                    </div>
+                    <div class="kills d-flex flex-column text-end">
+                        <div>40</div>
+                        <div>34</div>
+                        <div>32</div>
+                        <div>26</div>
+                        <div>17</div>
+                    </div>
+                    <div class="deaths d-flex flex-column text-end">
+                        <div>38</div>
+                        <div>33</div>
+                        <div>42</div>
+                        <div>34</div>
+                        <div>40</div>
+                    </div>
+                    <div class="rating d-flex flex-column text-end fw-bold">
+                        <div>1.09</div>
+                        <div>0.97</div>
+                        <div>0.84</div>
+                        <div>0.84</div>
+                        <div>0.63</div>
+                    </div>
+                </div>
+            </div>
+            <div class="team d-flex flex-column w-50 gap-3">
+                <div class="details-team d-flex flex-row-reverse justify-content-center gap-4">
+                    <div class="details-team__stats fw-bold">Player</div>
+                    <div class="details-team__stats fw-bold">Kills</div>
+                    <div class="details-team__stats fw-bold">Deaths</div>
+                    <div class="details-team__stats fw-bold">Rating</div>
+                </div>
+                <div class="players-container d-flex flex-row-reverse justify-content-center gap-5">
+                    <div class="players-names text-end">
+                        <div>shox</div>
+                        <div>EliGE</div>
+                        <div>oSee</div>
+                        <div>NAD</div>
+                        <div>nitr0</div>
+                    </div>
+                    <div class="kills d-flex flex-column text-start">
+                        <div>43</div>
+                        <div>43</div>
+                        <div>37</div>
+                        <div>34</div>
+                        <div>30</div>
+                    </div>
+                    <div class="deaths d-flex flex-column text-start">
+                        <div>35</div>
+                        <div>30</div>
+                        <div>24</div>
+                        <div>29</div>
+                        <div>31</div>
+                    </div>
+                    <div class="rating d-flex flex-column text-start fw-bold">
+                        <div>1.32</div>
+                        <div>1.31</div>
+                        <div>1.22</div>
+                        <div>1.08</div>
+                        <div>0.96</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="next-match only-desktop gap-4">
+    <div class="only-mobile d-flex flex-column align-items-center w-100">
+        <div class="title">NEXT MATCHES</div>
+        <div class="carousel slide carousel__next-matches p-4 w-100" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <div class="next-match__item p-4 d-flex flex-column align-items-center gap-3">
+                        <div class="data d-flex flex-row gap-3">
+                            <div class="game d-flex flex-column align-items-start">
+                                <div class="game-name info">CS:GO</div>
+                                <div class="game-tournament info">PGL Major Antwerp 2022</div>
+                            </div>
+                            <div class="date info">10 Jun 2022</div>
+                        </div>
+                        <div class="opponents d-flex gap-5">
+                            <div class="opponent d-flex flex-column align-items-center">
+                                <img src="./img/9z.png" alt="" class="opponent-img">
+                                <div class="opponent-name">9z</div>
+                            </div>
+                            <div class="scores d-flex align-items-center gap-3">
+                                <div class="scores-score"></div>
+                                <div class="scores-separator">VS</div>
+                                <div class="scores-score"></div>
+                            </div>
+                            <div class="opponent d-flex flex-column align-items-center">
+                                <img src="./img/ico_teams/faze.svg" alt="" class="opponent-img">
+                                <div class="opponent-name">FaZe</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <div class="next-match__item d-flex flex-column align-items-center p-4 gap-3">
+                        <div class="data d-flex flex-row gap-3">
+                            <div class="game d-flex flex-column align-items-start">
+                                <div class="game-name info">CS:GO</div>
+                                <div class="game-tournament info">PGL Major Antwerp 2022</div>
+                            </div>
+                            <div class="date info">15 Jun 2022</div>
+                        </div>
+                        <div class="opponents d-flex gap-5">
+                            <div class="opponent d-flex flex-column align-items-center">
+                                <img src="./img/9z.png" alt="" class="opponent-img">
+                                <div class="opponent-name">9z</div>
+                            </div>
+                            <div class="scores d-flex align-items-center gap-3">
+                                <div class="scores-score"></div>
+                                <div class="scores-separator">VS</div>
+                                <div class="scores-score"></div>
+                            </div>
+                            <div class="opponent d-flex flex-column align-items-center">
+                                <img src="./img/ico_teams/leviatan.webp" alt="" class="opponent-img">
+                                <div class="opponent-name">Leviatan</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <div class="next-match__item d-flex flex-column align-items-center p-4 gap-3">
+                        <div class="data d-flex flex-row gap-3">
+                            <div class="game d-flex flex-column align-items-start">
+                                <div class="game-name info">CS:GO</div>
+                                <div class="game-tournament info">PGL Major Antwerp 2022</div>
+                            </div>
+                            <div class="date info">20 Jun 2022</div>
+                        </div>
+                        <div class="opponents d-flex gap-5">
+                            <div class="opponent d-flex flex-column align-items-center">
+                                <img src="./img/9z.png" alt="" class="opponent-img">
+                                <div class="opponent-name">9z</div>
+                            </div>
+                            <div class="scores d-flex align-items-center gap-3">
+                                <div class="scores-score"></div>
+                                <div class="scores-separator">VS</div>
+                                <div class="scores-score"></div>
+                            </div>
+                            <div class="opponent d-flex flex-column align-items-center">
+                                <img src="./img/ico_teams/kru.webp" alt="" class="opponent-img">
+                                <div class="opponent-name">KRÜ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="next-match tablet-desktop gap-4">
         <div class="title">NEXT MATCHES</div>
         <div class="next-match__item p-4 d-flex flex-column align-items-center gap-3">
             <div class="data d-flex flex-row gap-3">
@@ -116,55 +274,51 @@
                 </div>
             </div>
         </div>
-        <div class="next-match__item">
-            <div class="next-match__item d-flex flex-column align-items-center p-4">
-                <div class="data d-flex flex-row gap-3">
-                    <div class="game d-flex flex-column align-items-start">
-                        <div class="game-name info">CS:GO</div>
-                        <div class="game-tournament info">PGL Major Antwerp 2022</div>
-                    </div>
-                    <div class="date info">15 Jun 2022</div>
+        <div class="next-match__item d-flex flex-column align-items-center p-4 gap-3">
+            <div class="data d-flex flex-row gap-3">
+                <div class="game d-flex flex-column align-items-start">
+                    <div class="game-name info">CS:GO</div>
+                    <div class="game-tournament info">PGL Major Antwerp 2022</div>
                 </div>
-                <div class="opponents d-flex gap-5">
-                    <div class="opponent d-flex flex-column align-items-center">
-                        <img src="./img/9z.png" alt="" class="opponent-img">
-                        <div class="opponent-name">9z</div>
-                    </div>
-                    <div class="scores d-flex align-items-center gap-3">
-                        <div class="scores-score"></div>
-                        <div class="scores-separator">VS</div>
-                        <div class="scores-score"></div>
-                    </div>
-                    <div class="opponent d-flex flex-column align-items-center">
-                        <img src="./img/ico_teams/leviatan.webp" alt="" class="opponent-img">
-                        <div class="opponent-name">Leviatan</div>
-                    </div>
+                <div class="date info">15 Jun 2022</div>
+            </div>
+            <div class="opponents d-flex gap-5">
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="./img/9z.png" alt="" class="opponent-img">
+                    <div class="opponent-name">9z</div>
+                </div>
+                <div class="scores d-flex align-items-center gap-3">
+                    <div class="scores-score"></div>
+                    <div class="scores-separator">VS</div>
+                    <div class="scores-score"></div>
+                </div>
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="./img/ico_teams/leviatan.webp" alt="" class="opponent-img">
+                    <div class="opponent-name">Leviatan</div>
                 </div>
             </div>
         </div>
-        <div class="next-match__item">
-            <div class="next-match__item d-flex flex-column align-items-center p-4">
-                <div class="data d-flex flex-row gap-3">
-                    <div class="game d-flex flex-column align-items-start">
-                        <div class="game-name info">CS:GO</div>
-                        <div class="game-tournament info">PGL Major Antwerp 2022</div>
-                    </div>
-                    <div class="date info">20 Jun 2022</div>
+        <div class="next-match__item d-flex flex-column align-items-center p-4 gap-3">
+            <div class="data d-flex flex-row gap-3">
+                <div class="game d-flex flex-column align-items-start">
+                    <div class="game-name info">CS:GO</div>
+                    <div class="game-tournament info">PGL Major Antwerp 2022</div>
                 </div>
-                <div class="opponents d-flex gap-5">
-                    <div class="opponent d-flex flex-column align-items-center">
-                        <img src="./img/9z.png" alt="" class="opponent-img">
-                        <div class="opponent-name">9z</div>
-                    </div>
-                    <div class="scores d-flex align-items-center gap-3">
-                        <div class="scores-score"></div>
-                        <div class="scores-separator">VS</div>
-                        <div class="scores-score"></div>
-                    </div>
-                    <div class="opponent d-flex flex-column align-items-center">
-                        <img src="./img/ico_teams/kru.webp" alt="" class="opponent-img">
-                        <div class="opponent-name">KRÜ</div>
-                    </div>
+                <div class="date info">20 Jun 2022</div>
+            </div>
+            <div class="opponents d-flex gap-5">
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="./img/9z.png" alt="" class="opponent-img">
+                    <div class="opponent-name">9z</div>
+                </div>
+                <div class="scores d-flex align-items-center gap-3">
+                    <div class="scores-score"></div>
+                    <div class="scores-separator">VS</div>
+                    <div class="scores-score"></div>
+                </div>
+                <div class="opponent d-flex flex-column align-items-center">
+                    <img src="./img/ico_teams/kru.webp" alt="" class="opponent-img">
+                    <div class="opponent-name">KRÜ</div>
                 </div>
             </div>
         </div>
@@ -174,7 +328,7 @@
             <a class="twitter-timeline" data-height="600" href="https://twitter.com/9zTeam?ref_src=twsrc%5Etfw">Tweets by 9zTeam</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
     </div>
-    <div class="shop d-flex flex-column align-items-center justify-content-center gap-4 w-100">
+    <div class="shop d-flex flex-column align-items-center justify-content-center gap-4 w-100 mb-4">
         <div class="title">SHOP</div>
         <div class="card-shop card border-dark text-light d-flex flex-column align-items-center">
             <img src="./img/shirt.png" class="card-img-index card-img-top" alt="...">

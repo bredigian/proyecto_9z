@@ -24,8 +24,12 @@ a{
     body{
         background-color: #23003f;
     }
-
-
+    .only-desktop{
+        display: none !important;
+    }
+    .tablet-desktop{
+        display: none !important;
+    }
     /*-------------------INDEX-------------------*/
     .body__index{
         display: grid;
@@ -33,6 +37,7 @@ a{
             "logo"
             "news"
             "last-match"
+            "carousel-next__matches"
             "shop"
             "footer"
             "header"
@@ -77,21 +82,23 @@ a{
         align-items: center;
         list-style-type: none;
         padding: .5rem;
+        margin: 0 !important;
     }
     .li-word{ /*---------------GENERAL PROPERTY---------------*/
         display: none;
     }
-    .fa-solid{ /*---------------GENERAL PROPERTY---------------*/
+    .only-mobile .fa-solid{ /*---------------GENERAL PROPERTY---------------*/
         font-size: 2.5rem;
         color: var(--violet9z);
         padding: 1rem;
     }
-    .fa-solid:hover{
+    .only-mobile .fa-solid:hover{
         background-color: var(--violet9z);
         color: #FFFFFF;
         border-radius: 1rem;
     }
     .news{
+        grid-area: news;
         padding: 2rem;
     }
     .carousel-inner{
@@ -103,6 +110,7 @@ a{
     .last-match__item{
         background-color: #FFFFFF;
         border-radius: 1rem;
+        width: 100%;
     }
     .info{
         font-size: 1.5rem;
@@ -124,8 +132,25 @@ a{
     .card-img-index{
         width: 10rem;
     }
+    .carousel__next-matches{
+        grid-area: carousel-next__matches;
+        padding: 2rem;
+    }
+    .carousel__next-matches .carousel-item{
+        background-color: #FFFFFF;
+    }
+    .carousel__next-matches .opponent-img{
+        width: 7rem;
+        height: 7rem;
+    }
+    .carousel__next-matches .opponent-name{
+        font-size: 2rem;
+    }
+    .carousel__next-matches .scores-separator{
+        font-size: 3rem;
+    }
     .shop{
-        margin: 2rem 0;
+        grid-area: shop;
     }
     .title{
         font-size: 2rem;
@@ -281,9 +306,6 @@ a{
 
 
     /*-------------------TEAMS-------------------*/
-    .only-desktop{
-        display: none;
-    }
 
     .body__teams{
         display: grid;
@@ -320,48 +342,37 @@ a{
             "header"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: .5fr 1fr 7fr 1fr 0fr;
+        grid-template-rows: auto;
     }
     .allTeam{
         grid-area: allTeam;
-        background-image: url(./img/teams/csgo/all_team_9z.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center top;
         margin: 0 2rem;
         text-align: center;
         border-radius: 1rem;
     }
     .allTeam__ico{
-        width: 8rem;
-        height: 4rem;
-        margin-top: 1rem;
+        width: 10rem;
+    }
+    .allTeam__img{
+        width: 100%;
+    }
+    .allTeam__img img{
+        width: 100%;
+        border-radius: 1rem;
     }
     .players{
         grid-area: players;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        justify-content: space-evenly;
+        padding: 0 2rem;
     }
     .player{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
         background-color: #FFFFFF;
-        margin: 0 3rem;
         border-radius: 1rem;
     }
     .player__img{
-        width: 15rem;
-        height: 15rem;
+        width: 18rem;
     }
-    .player__info{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
+    .player__img-aux{
+        width: 15rem;
     }
     .player__info p{
         font-size: 4rem;
@@ -371,9 +382,7 @@ a{
         text-align: center;
     }
     .socialNetworks{
-        font-size: 2rem;
-        display: flex;
-        gap: 2rem;
+        font-size: 3rem;
     }
     .socialNetworks i{
         color: var(--violet9z);
@@ -583,13 +592,13 @@ a{
         background-position: center;
     }
     .only-mobile{
-        display: none;
+        display: none !important;
     }
     .li-word{
         display: block;
     }
-    .only-desktop{
-        display: block;
+    .tablet-desktop{
+        display: flex !important;
     }
 
 
@@ -634,9 +643,10 @@ a{
     .last-match__item{
         background-color: var(--violet9z);
         color: #FFFFFF;
+        width: fit-content;
     }
     .data{
-        gap: 5rem !important;
+        gap: 15rem !important;
     }
     .title{
         padding: 1rem;
@@ -651,7 +661,6 @@ a{
         flex-direction: column;
         align-items: center;
         width: 100%;
-        margin-top: 2rem;
     }
     .next-match__item{
         background-color:var(--violet9z);
@@ -673,6 +682,7 @@ a{
     }
     .shop{
         grid-area: shop;
+        margin-top: 1.5rem;
     }
     .footer{
         grid-area: footer;
@@ -743,19 +753,18 @@ a{
            "players"
            "footer"
         ;
-        grid-template-rows: 1fr 3fr 8fr 2fr;
     }
-    .allTeam{
-        grid-area: allTeam;
-        background-position: center top;
-        margin-top: 2rem;
-        border: solid var(--violet9z) 0.4rem;
+    .allTeam__ico{
+        width: 15rem;
     }
-    .players{
-        grid-area: players;
+    .allTeam__img img{
+        border: solid var(--violet9z) .4rem;
     }
     .player{
         background-color: var(--violet9z);
+    }
+    .player__img-aux{
+        padding: 1rem 0;
     }
     .player__info p{
         color: #FFFFFF;
@@ -888,6 +897,9 @@ a{
 
 /*-------------------DESKTOP QUERIE-------------------*/
 @media(min-width: 1200px){
+    .only-desktop{
+        display: flex !important;
+    }
     .body__index{
         display: grid;
         grid-template-areas: 
@@ -933,6 +945,15 @@ a{
     .info{
         font-size: 2rem;
     }
+    .last-match{
+        padding: 0 !important;
+    }
+    .last-match .opponents{
+        gap: 6rem !important;
+    }
+    .next-match__item .opponents{
+        gap: 6rem !important;
+    }
     .last-match .opponent-img{
         width: 10rem;
         height: 10rem;
@@ -952,6 +973,34 @@ a{
     }
     .last-match .scores-separator{
         font-size: 4rem;
+    }
+    .details{
+        transform: translateY(-30rem);
+        z-index: -1;
+        transition: .5s;
+        background-color: var(--violet9z);
+        color: #FFFFFF;
+        border-radius: 1rem;
+        transition: all 1s;
+        font-size: 1.5rem;
+    }
+    .ico-down{
+        color: var(--violet9z);
+        background-color: transparent;
+        border: none;
+        font-size: 3rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .ico-down::before{
+        transform: rotateX(0deg);
+    }
+    .ico-down:focus{
+        transform: rotateX(180deg);
+    }
+    .ico-down:focus ~ .details{
+        transform: translateY(0rem);
     }
     .next-match .scores-separator{
         font-size: 4rem;
@@ -1058,17 +1107,34 @@ a{
     
     /*----------CSGO VALORANT LOL----------*/
      .body__team{
-         grid-template-rows: 1fr 4fr 9fr 2fr;
          justify-items: center;
      }
    .allTeam{
-       border: solid var(--violet9z) .5rem;
-       width: 75%;
+       max-width: 1144px;
    }
-   .allTeam__ico{
-       width: 20rem;
-       height: 9rem;
+   .players{
+       flex-direction: row!important;
+       flex-wrap: wrap;
+       justify-content: center !important;
+       gap: 3rem !important;
    }
+   .player{
+       width: 315px !important;
+       height: 500px !important;
+       flex-direction: column;
+       transition: all .2s;
+       filter: brightness(.7);
+   }
+   .player__img{
+       width: 30rem;
+   }
+   .player:hover{
+       transform: translateY(-2rem);
+       background-image: url(./img/wallpaper9z.jpg);
+       background-position: center;
+       filter: brightness(1);
+   }
+   /*
    .players{
        display: flex;
        flex-direction: row;
@@ -1094,7 +1160,7 @@ a{
     }
     .socialNetworks a{
         color: var(--violet9z);
-    }
+    }*/
     
 
      /*----------NEWS----------*/ 
