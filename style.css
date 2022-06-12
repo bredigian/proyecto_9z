@@ -375,14 +375,14 @@ a{
         width: 15rem;
     }
     .player__info p{
-        font-size: 4rem;
+        font-size: 3rem;
         color: var(--violet9z);
         font-weight: 700;
         width: min-content;
         text-align: center;
     }
     .socialNetworks{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .socialNetworks i{
         color: var(--violet9z);
@@ -771,6 +771,12 @@ a{
     }
     .socialNetworks i{
         color: #FFFFFF;
+    }
+    .player__info p{
+        font-size: 4rem;
+    }
+    .socialNetworks{
+        font-size: 3rem;
     }
 
 
