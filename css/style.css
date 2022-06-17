@@ -308,6 +308,7 @@ html {
     background-color: #23003f;
     color: #FFFFFF;
     border-radius: 1rem;
+    width: 430.03px;
   }
   .next-match .next-match__item .info {
     font-size: 1.5rem;
@@ -393,6 +394,9 @@ html {
     border-radius: 1rem;
     transition: all 1s;
     font-size: 1.5rem;
+  }
+  .body__index .next-match .next-match__item {
+    width: 508.36px;
   }
   .body__index .next-match .next-match__item .info {
     font-size: 2rem;

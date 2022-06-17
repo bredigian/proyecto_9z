@@ -1,11 +1,19 @@
 {
-  "name": "pr_sass",
+  "name": "proyecto_9z",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bredigian/proyecto_9z.git"
+  },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/bredigian/proyecto_9z/issues"
+  },
+  "homepage": "https://github.com/bredigian/proyecto_9z#readme"
 }
