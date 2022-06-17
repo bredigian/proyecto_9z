@@ -1,0 +1,15 @@
+.ico-down{
+    color: $violet9z;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .5s;
+    &::before{
+        transform: rotateX(0deg);
+    }
+    &:focus{
+        transform: rotateX(180deg);
+    }
+}

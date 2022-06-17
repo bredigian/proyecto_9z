@@ -1,0 +1,91 @@
+@media (min-width: 0px){
+    .footer{
+        grid-area: footer;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 3rem;
+        padding: 3rem;
+        color: $violet9z;
+        .footer__container{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            .more__sections{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                list-style-type: none;
+                gap: 2rem;
+                .more__sections-item{
+                    color:  $violet9z;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+            }
+            .footer__social{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                i{
+                    font-size: 3rem;
+                    color: $violet9z;
+                }
+            }
+        }
+        .footer__text{
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--violet9z);
+            text-align: center;
+        }
+    }
+}
+@media (min-width: 768px){
+    .footer{
+        background-color: $violet9z;
+        .footer__container{
+            .more__sections{
+                .more__sections-item{
+                    color: #FFFFFF;
+                }
+            }
+            .footer__social{
+                i{
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .footer__text{
+            color: #FFFFFF;
+        }
+    }
+}
+@media (min-width: 1200px){
+    .footer{
+        font-size: 2rem;
+        width: 100%;
+        height: 100%;
+        .footer__container{
+            .more__sections{
+                flex-direction: row;
+                justify-content: space-evenly;
+                &hover{
+                    color: #FFFFFF;
+                }
+            }
+            .footer__social{
+                gap: 4rem;
+                margin: 2.5rem;
+                i{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}

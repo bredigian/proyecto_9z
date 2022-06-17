@@ -1,0 +1,10 @@
+@media (min-width: 0px){
+    .only-desktop{
+        display: none!important;
+    }
+}
+@media (min-width: 1200px){
+    .only-desktop{
+        display: flex!important;
+    }
+}

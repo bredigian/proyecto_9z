@@ -1,0 +1,91 @@
+@media (min-width: 0px){
+    .header{
+        grid-area: header;
+        background-color: #FFFFFF;
+        height: fit-content;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        position: sticky;
+        bottom: 1rem;
+        z-index: 1;
+        -webkit-box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
+        -moz-box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
+        box-shadow: 0px 0px 14px 13px rgba(35,0,63,1);
+    }
+    .header{
+        .header__navbar{
+            .navbar__container{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                list-style-type: none;
+                padding: .5rem;
+                margin: 0 !important;
+                .li-word{
+                    display: none;
+                }
+                .fa-solid{
+                    font-size: 2.5rem;
+                    color: $violet9z;
+                    padding: 1rem;   
+                }
+            }
+            .header__logo{
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    .header{
+        background-color: $violet9z;
+        border-radius: 0%;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        .header__navbar{
+            .navbar__container{
+                .li-word{
+                    display: block;
+                }
+                .header__logo{
+                    width: 8rem;
+                    height: 8rem;
+                }
+                a{
+                    font-size: 1.5rem;
+                    color: #FFFFFF;
+                    padding: 1rem;
+                    transition: all .2s;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px){
+    .header{
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        .header__navbar{
+            .navbar__container{
+                justify-content: center;
+                gap: 3rem;
+                li{
+                    font-size: 2rem;
+                    transition: all .2s;
+                    padding: 1rem;
+                    &:hover{
+                        border-bottom: solid #FFFFFF 0.1rem;
+                        transform: translateY(-1rem);
+                    }
+                }
+            }
+        }
+    }
+}

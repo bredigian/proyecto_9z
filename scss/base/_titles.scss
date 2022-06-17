@@ -1,0 +1,17 @@
+@media (min-width: 0px){
+    .title{
+        font-size: 2rem;
+        color: #FFFFFF;
+        border-bottom: solid #FFFFFF 0.3rem;
+    }
+}
+@media (min-width: 768px){
+    .title{
+        padding: 1rem;
+        background-color: $violet9z;
+        color: #FFFFFF;
+        font-weight: 700;
+        border-radius: 1rem;
+        border-bottom: none;
+    }
+}

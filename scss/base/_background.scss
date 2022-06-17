@@ -1,0 +1,13 @@
+@media(min-width: 0px){
+    body{
+        background-color: $violet9z;
+    }
+}
+@media(min-width: 768px){
+    body{
+        background-image: url(../img/wallpaper-9z-white.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
