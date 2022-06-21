@@ -622,6 +622,168 @@ html {
   }
 }
 /*----------END MATCHES----------*/
+/*----------TEAMS----------*/
+@media (min-width: 0px) {
+  .body__teams {
+    display: grid;
+    grid-template-areas: "logo" "teams" "footer" "header";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .body__teams .teams__container {
+    grid-area: teams;
+  }
+  .body__teams .teams__container .teams__item {
+    padding: 3rem;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    max-width: 43rem;
+  }
+  .body__teams .teams__container .teams__item-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .body__teams {
+    grid-template-areas: "header" "teams" "footer";
+  }
+  .body__teams .teams__container {
+    margin-top: 3rem;
+  }
+  .body__teams .teams__container .teams__item {
+    background-color: #23003f;
+    max-width: 53rem;
+  }
+}
+@media (min-width: 1200px) {
+  .body__teams .teams__container .teams {
+    flex-direction: row !important;
+    height: 75rem !important;
+    width: 100% !important;
+    justify-content: center;
+  }
+  .body__teams .teams__container .teams__item {
+    height: 100%;
+    width: 20%;
+    transition: all 0.2s;
+  }
+  .body__teams .teams__container .teams__item:hover {
+    transform: translateY(-2rem);
+  }
+}
+/*----------END TEAMS----------*/
+/*----------CSGO ACADEMY VALORANT LOL----------*/
+@media (min-width: 0px) {
+  .body__team {
+    display: grid;
+    grid-template-areas: "logo" "allTeam" "players" "footer" "header";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .body__team .allTeam {
+    grid-area: allTeam;
+    margin: 0 2rem;
+    text-align: center;
+    border-radius: 1rem;
+  }
+  .body__team .allTeam__ico {
+    width: 10rem;
+  }
+  .body__team .allTeam__img {
+    width: 100%;
+  }
+  .body__team .allTeam__img img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .body__team .players {
+    grid-area: players;
+    padding: 0 2rem;
+  }
+  .body__team .players .player {
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+  }
+  .body__team .players .player__img {
+    width: 18rem;
+  }
+  .body__team .players .player__img-aux {
+    width: 15rem;
+  }
+  .body__team .players .player__info p {
+    font-size: 3rem;
+    color: var(--violet9z);
+    font-weight: 700;
+    width: min-content;
+    text-align: center;
+  }
+  .body__team .players .player__info .socialNetworks {
+    font-size: 2.5rem;
+  }
+  .body__team .players .player__info .socialNetworks i {
+    color: #23003f;
+  }
+}
+@media (min-width: 768px) {
+  .body__team {
+    grid-template-areas: "header" "allTeam" "players" "footer";
+  }
+  .body__team .allTeam__ico {
+    width: 15rem;
+  }
+  .body__team .allTeam__ico img {
+    border: solid #23003f 0.4rem;
+  }
+  .body__team .players .player {
+    background-color: #23003f;
+  }
+  .body__team .players .player__img-aux {
+    padding: 1rem 0;
+  }
+  .body__team .players .player__info p {
+    color: #FFFFFF;
+    font-size: 4rem;
+  }
+  .body__team .players .player__info .socialNetworks {
+    font-size: 3rem;
+  }
+  .body__team .players .player__info .socialNetworks i {
+    color: #FFFFFF;
+  }
+}
+@media (min-width: 1200px) {
+  .body__team {
+    justify-items: center;
+  }
+  .body__team .allTeam {
+    max-width: 1144px;
+  }
+  .body__team .players {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    gap: 3rem !important;
+  }
+  .body__team .players .player {
+    width: 315px !important;
+    height: 500px !important;
+    flex-direction: column;
+    transition: all 0.2s;
+    filter: brightness(0.7);
+  }
+  .body__team .players .player__img {
+    width: 30rem;
+  }
+  .body__team .players .player:hover {
+    transform: translateY(-2rem);
+    background-image: url(../img/wallpaper9z.jpg);
+    background-position: center;
+    filter: brightness(1);
+  }
+}
+/*----------END CSGO ACADEMY VALORANT LOL----------*/
 @media (min-width: 0px) {
   .footer {
     grid-area: footer;

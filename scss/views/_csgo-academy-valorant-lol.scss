@@ -1,0 +1,131 @@
+/*----------CSGO ACADEMY VALORANT LOL----------*/
+@media(min-width: 0px){
+    .body__team{
+        display: grid;
+        grid-template-areas: 
+            "logo"
+            "allTeam"
+            "players"
+            "footer"
+            "header"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        .allTeam{
+            grid-area: allTeam;
+            margin: 0 2rem;
+            text-align: center;
+            border-radius: 1rem;
+            &__ico{
+                width: 10rem;
+            }
+            &__img{
+                width: 100%;
+                img{
+                    width: 100%;
+                    border-radius: 1rem;
+                }
+            }
+        }
+        .players{
+            grid-area: players;
+            padding: 0 2rem;
+            .player{
+                background-color: #FFFFFF;
+                border-radius: 1rem;
+                &__img{
+                    width: 18rem;
+                    &-aux{
+                        width: 15rem;
+                    }
+                }
+                &__info{
+                    p{
+                        font-size: 3rem;
+                        color: var(--violet9z);
+                        font-weight: 700;
+                        width: min-content;
+                        text-align: center;
+                    }
+                    .socialNetworks{
+                        font-size: 2.5rem;
+                        i{
+                            color: $violet9z;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width: 768px){
+    .body__team{
+        grid-template-areas: 
+            "header"
+            "allTeam"
+            "players"
+            "footer"
+        ;
+        .allTeam{
+            &__ico{
+                width: 15rem;
+                img{
+                    border: solid $violet9z .4rem;
+                }
+            }
+        }
+        .players{
+            .player{
+                background-color: $violet9z;
+                &__img{
+                    &-aux{
+                        padding: 1rem 0;
+                    }
+                }
+                &__info{
+                    p{
+                        color: #FFFFFF;
+                        font-size: 4rem;
+                    }
+                    .socialNetworks{
+                        font-size: 3rem;
+                        i{
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width: 1200px){
+    .body__team{
+        justify-items: center;
+        .allTeam{
+            max-width: 1144px;
+        }
+        .players{
+            flex-direction: row!important;
+            flex-wrap: wrap;
+            justify-content: center !important;
+            gap: 3rem !important;
+            .player{
+                width: 315px !important;
+                height: 500px !important;
+                flex-direction: column;
+                transition: all .2s;
+                filter: brightness(.7);
+                &__img{
+                    width: 30rem;
+                }
+                &:hover{
+                    transform: translateY(-2rem);
+                    background-image: url(../img/wallpaper9z.jpg);
+                    background-position: center;
+                    filter: brightness(1);
+                }
+            }
+        }
+    }
+}
+/*----------END CSGO ACADEMY VALORANT LOL----------*/
