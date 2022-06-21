@@ -30,6 +30,19 @@ html {
     background-attachment: fixed;
   }
 }
+.top-logo {
+  grid-area: logo;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.top-logo img {
+  width: 10rem;
+  height: 10rem;
+}
+
 @media (min-width: 768px) {
   .only-mobile {
     display: none !important;
@@ -176,18 +189,6 @@ html {
     grid-template-areas: "logo" "news" "last-match" "carousel-next__matches" "shop" "footer" "header";
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-  }
-  .body__index .top-logo {
-    grid-area: logo;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-  }
-  .body__index .top-logo img {
-    width: 10rem;
-    height: 10rem;
   }
   .body__index .news {
     grid-area: news;
@@ -431,6 +432,196 @@ html {
   }
 }
 /*----------END INDEX----------*/
+/*----------MATCHES----------*/
+@media (min-width: 0px) {
+  .body__matches {
+    display: grid;
+    grid-template-areas: "logo" "last" "next" "footer" "header";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .body__matches .last__matches {
+    grid-area: last;
+  }
+  .body__matches .last__matches .match-item {
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    width: 90%;
+  }
+  .body__matches .last__matches .match-item .data-game__ico {
+    width: 3rem;
+  }
+  .body__matches .last__matches .match-item .data-game__info {
+    width: 4rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .body__matches .last__matches .match-item .opponents .opponent-img {
+    height: 5rem;
+    width: 5rem;
+  }
+  .body__matches .last__matches .match-item .opponents .opponent-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .body__matches .last__matches .match-item .opponents .scores-score {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .body__matches .last__matches .match-item .opponents .scores-separator {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .body__matches .next__matches {
+    grid-area: next;
+    margin: 3rem 0;
+  }
+  .body__matches .next__matches .match-item {
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    width: 90%;
+  }
+  .body__matches .next__matches .match-item .data-game__ico {
+    width: 3rem;
+  }
+  .body__matches .next__matches .match-item .data-game__info {
+    width: 4rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .body__matches .next__matches .match-item .opponents .opponent-img {
+    height: 5rem;
+    width: 5rem;
+  }
+  .body__matches .next__matches .match-item .opponents .opponent-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .body__matches .next__matches .match-item .opponents .scores-score {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .body__matches .next__matches .match-item .opponents .scores-separator {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 768px) {
+  .body__matches {
+    grid-template-areas: "header" "last" "next" "footer";
+  }
+  .body__matches .last__matches {
+    margin-top: 3rem;
+  }
+  .body__matches .last__matches .match-item {
+    background-color: #23003f;
+    color: #FFFFFF;
+  }
+  .body__matches .last__matches .match-item .opponents {
+    gap: 5rem !important;
+  }
+  .body__matches .last__matches .match-item .opponents .scores {
+    gap: 1rem !important;
+  }
+  .body__matches .next__matches {
+    margin-top: 3rem;
+  }
+  .body__matches .next__matches .match-item {
+    background-color: #23003f;
+    color: #FFFFFF;
+  }
+  .body__matches .next__matches .match-item .opponents {
+    gap: 5rem !important;
+  }
+  .body__matches .next__matches .match-item .opponents .scores {
+    gap: 1rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .body__matches {
+    grid-template-areas: "header header" "last next" "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .body__matches .last__matches {
+    margin-bottom: 3rem;
+  }
+  .body__matches .last__matches .match-item {
+    border: solid transparent 0.2rem;
+    transition: all 0.2s;
+  }
+  .body__matches .last__matches .match-item:hover {
+    background-color: transparent;
+    backdrop-filter: blur(0.5rem);
+    color: var(--violet9z);
+    border-color: var(--violet9z);
+    cursor: pointer;
+  }
+  .body__matches .last__matches .match-item .data-game__ico {
+    width: 5rem;
+  }
+  .body__matches .last__matches .match-item .data-game__info {
+    font-size: 2rem;
+    width: 7rem;
+  }
+  .body__matches .last__matches .match-item .opponents {
+    gap: 3rem !important;
+  }
+  .body__matches .last__matches .match-item .opponents .opponent-img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .body__matches .last__matches .match-item .opponents .opponent-name {
+    font-size: 2rem;
+  }
+  .body__matches .last__matches .match-item .opponents .scores-score {
+    font-size: 5rem;
+  }
+  .body__matches .last__matches .match-item .opponents .scores-separator {
+    font-size: 4rem;
+  }
+  .body__matches .next__matches {
+    margin-bottom: 3rem;
+  }
+  .body__matches .next__matches .match-item {
+    border: solid transparent 0.2rem;
+    transition: all 0.2s;
+  }
+  .body__matches .next__matches .match-item:hover {
+    background-color: transparent;
+    backdrop-filter: blur(0.5rem);
+    color: var(--violet9z);
+    border-color: var(--violet9z);
+    cursor: pointer;
+  }
+  .body__matches .next__matches .match-item .data-game__ico {
+    width: 5rem;
+  }
+  .body__matches .next__matches .match-item .data-game__info {
+    font-size: 2rem;
+    width: 7rem;
+  }
+  .body__matches .next__matches .match-item .opponents {
+    gap: 3rem !important;
+  }
+  .body__matches .next__matches .match-item .opponents .opponent-img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .body__matches .next__matches .match-item .opponents .opponent-name {
+    font-size: 2rem;
+  }
+  .body__matches .next__matches .match-item .opponents .scores-score {
+    font-size: 5rem;
+  }
+  .body__matches .next__matches .match-item .opponents .scores-separator {
+    font-size: 4rem;
+  }
+}
+/*----------END MATCHES----------*/
 @media (min-width: 0px) {
   .footer {
     grid-area: footer;

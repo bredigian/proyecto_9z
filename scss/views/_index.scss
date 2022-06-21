@@ -13,18 +13,6 @@
         ;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        .top-logo{
-            grid-area: logo;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            img{
-                width: 10rem;
-                height: 10rem;
-            }
-        }
         .news{
             grid-area: news;
             padding: 2rem;

@@ -1,0 +1,234 @@
+/*----------MATCHES----------*/
+@media (min-width: 0px){
+    .body__matches{
+        display: grid;
+        grid-template-areas: 
+            "logo"
+            "last"
+            "next"
+            "footer"
+            "header"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        .last__matches{
+            grid-area: last;
+            .match-item{
+                background-color: #FFFFFF;
+                border-radius: 1rem;
+                width: 90%;
+                .data-game{
+                    &__ico{
+                        width: 3rem;
+                    }
+                    &__info{
+                        width: 4rem;
+                        text-align: center;
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                    }
+                }
+                .opponents{
+                    .opponent{
+                        &-img{
+                            height: 5rem;
+                            width: 5rem;
+                        }
+                        &-name{
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                            text-align: center;
+                        }
+                    }
+                    .scores{
+                        &-score{
+                            font-size: 3rem;
+                            font-weight: 700;
+                        }
+                        &-separator{
+                            font-size: 2rem;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+        .next__matches{
+            grid-area: next;
+            margin: 3rem 0;
+            .match-item{
+                background-color: #FFFFFF;
+                border-radius: 1rem;
+                width: 90%;
+                .data-game{
+                    &__ico{
+                        width: 3rem;
+                    }
+                    &__info{
+                        width: 4rem;
+                        text-align: center;
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                    }
+                }
+                .opponents{
+                    .opponent{
+                        &-img{
+                            height: 5rem;
+                            width: 5rem;
+                        }
+                        &-name{
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                            text-align: center;
+                        }
+                    }
+                    .scores{
+                        &-score{
+                            font-size: 3rem;
+                            font-weight: 700;
+                        }
+                        &-separator{
+                            font-size: 2rem;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    .body__matches{
+        grid-template-areas: 
+             "header"
+             "last"
+             "next"
+             "footer"
+        ;
+        .last__matches{
+            margin-top: 3rem;
+            .match-item{
+                background-color: $violet9z;
+                color: #FFFFFF;
+                .opponents{
+                    gap: 5rem !important;
+                    .scores{
+                        gap: 1rem !important;
+                    }
+                }
+            }
+        }
+        .next__matches{
+            margin-top: 3rem;
+            .match-item{
+                background-color: $violet9z;
+                color: #FFFFFF;
+                .opponents{
+                    gap: 5rem !important;
+                    .scores{
+                        gap: 1rem !important;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+@media (min-width: 1200px){
+    .body__matches{
+        grid-template-areas: 
+            "header header"
+            "last next"
+            "footer footer"
+        ;
+        grid-template-columns: repeat(2,1fr);
+        .last__matches{
+            margin-bottom: 3rem;
+            .match-item{
+                border: solid transparent .2rem;
+                transition: all .2s;
+                &:hover{
+                    background-color: transparent;
+                    backdrop-filter: blur(.5rem);
+                    color: var(--violet9z);
+                    border-color: var(--violet9z);
+                    cursor: pointer;
+                }
+                .data-game{
+                    &__ico{
+                        width: 5rem;
+                    }
+                    &__info{
+                        font-size: 2rem;
+                        width: 7rem;
+                    }
+                }
+                .opponents{
+                    gap: 3rem !important;
+                    .opponent{
+                        &-img{
+                            width: 7rem;
+                            height: 7rem;
+                        }
+                        &-name{
+                            font-size: 2rem;
+                        }
+                    }
+                    .scores{
+                        &-score{
+                            font-size: 5rem;
+                        }
+                        &-separator{
+                            font-size: 4rem;
+                        }
+                    }
+                }
+            }
+        }
+        .next__matches{
+            margin-bottom: 3rem;
+            .match-item{
+                border: solid transparent .2rem;
+                transition: all .2s;
+                &:hover{
+                    background-color: transparent;
+                    backdrop-filter: blur(.5rem);
+                    color: var(--violet9z);
+                    border-color: var(--violet9z);
+                    cursor: pointer;
+                }
+                .data-game{
+                    &__ico{
+                        width: 5rem;
+                    }
+                    &__info{
+                        font-size: 2rem;
+                        width: 7rem;
+                    }
+                }
+                .opponents{
+                    gap: 3rem !important;
+                    .opponent{
+                        &-img{
+                            width: 7rem;
+                            height: 7rem;
+                        }
+                        &-name{
+                            font-size: 2rem;
+                        }
+                    }
+                    .scores{
+                        &-score{
+                            font-size: 5rem;
+                        }
+                        &-separator{
+                            font-size: 4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*----------END MATCHES----------*/
