@@ -1,0 +1,87 @@
+/*----------NEWS----------*/
+@media(min-width: 0px){
+    .body__news{
+        display: grid;
+        grid-template-areas:
+            "logo"
+            "news__container"
+            "footer"
+            "header"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        .news__container{
+            grid-area: news__container;
+            padding: 0 2rem;
+            &-items{
+                .news-item{
+                    .news-img{
+                        width: 30rem;
+                        height: 17rem;
+                        border-top-right-radius: 1rem;
+                        border-top-left-radius: 1rem;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    &__text{
+                        background-color: #FFFFFF;
+                        color: $violet9z;
+                        text-align: center;
+                        font-size: 1.5rem;
+                        width: 30rem;
+                        font-weight: 700;
+                        border-bottom-left-radius: 1rem;
+                        border-bottom-right-radius: 1rem;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width: 768px){
+    .body__news{
+        grid-template-areas: 
+            "header"
+            "news__container"
+            "footer"
+        ;
+        .news__container{
+            margin-top: 3rem;
+            &-items{
+                .news-item{
+                    &__text{
+                        background-color: $violet9z;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width: 1200px){
+    .body__news{
+        .news__container{
+            &-items{
+                .news-item{
+                    transition: all .2s;
+                    &:hover{
+                        transform: scale(1.05);
+                        cursor: pointer;
+                    }
+                    .news-img{
+                        width: 50rem;
+                        height: 27rem;
+                    }
+                    &__text{
+                        width: 50rem;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+/*----------END NEWS----------*/

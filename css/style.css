@@ -784,6 +784,70 @@ html {
   }
 }
 /*----------END CSGO ACADEMY VALORANT LOL----------*/
+/*----------NEWS----------*/
+@media (min-width: 0px) {
+  .body__news {
+    display: grid;
+    grid-template-areas: "logo" "news__container" "footer" "header";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .body__news .news__container {
+    grid-area: news__container;
+    padding: 0 2rem;
+  }
+  .body__news .news__container-items .news-item .news-img {
+    width: 30rem;
+    height: 17rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+  .body__news .news__container-items .news-item .news-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .body__news .news__container-items .news-item__text {
+    background-color: #FFFFFF;
+    color: #23003f;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 30rem;
+    font-weight: 700;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .body__news {
+    grid-template-areas: "header" "news__container" "footer";
+  }
+  .body__news .news__container {
+    margin-top: 3rem;
+  }
+  .body__news .news__container-items .news-item__text {
+    background-color: #23003f;
+    color: #FFFFFF;
+  }
+}
+@media (min-width: 1200px) {
+  .body__news .news__container-items .news-item {
+    transition: all 0.2s;
+  }
+  .body__news .news__container-items .news-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .body__news .news__container-items .news-item .news-img {
+    width: 50rem;
+    height: 27rem;
+  }
+  .body__news .news__container-items .news-item__text {
+    width: 50rem;
+    font-size: 2rem;
+  }
+}
+/*----------END NEWS----------*/
 @media (min-width: 0px) {
   .footer {
     grid-area: footer;
