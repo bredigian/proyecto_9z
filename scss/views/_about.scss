@@ -1,0 +1,183 @@
+/*----------ABOIUT----------*/
+@media(min-width: 0px){
+    .body__about{
+        display: grid;
+        grid-template-areas: 
+            "logo"
+            "info"
+            "sponsors"
+            "footer"
+            "header"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        .info-section{
+            grid-area: info;
+            .about-section{
+                color: #FFFFFF;
+                font-weight: 700;
+                &__title{
+                    font-size: 4rem;
+                    border-bottom: solid #FFFFFF .4rem;
+                }
+                &__text{
+                    text-align: center;
+                    margin: 0 3rem;
+                    padding: 2rem;
+                    font-size: 1.5rem;
+                    background-color: #FFFFFF;
+                    border-radius: 1rem;
+                    color: $violet9z;
+                }
+            }
+            .info-ceo{
+                &__img{
+                    img{
+                        width: 30rem;
+                        height: 30rem;
+                        border-radius: 1rem;
+                    }
+                }
+                &__name{
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: #FFFFFF;
+                }
+                &__social{
+                    font-size: 2.5rem;
+                    i{
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        .sponsors{
+            grid-area: sponsors;
+            &-title{
+                font-size: 2.5rem;
+                color: #FFFFFF;
+                border-bottom: solid #FFFFFF 0.4rem;
+                font-weight: 700;
+            }
+            &-img{
+                .sponsor-logo{
+                    width: 10rem;
+                    height: 7rem;
+                }
+                #shell-logo{
+                    width: 8rem;
+                    height: 7rem;
+                }
+                #diggit-logo{
+                    height: 5rem;
+                }
+                #logitech-logo{
+                    width: 11rem;
+                    height: 4rem;
+                }
+                #redbull-logo{
+                    width: 8rem;
+                    height: 5rem;
+                }
+            }
+        }
+    }
+}
+@media(min-width: 768px){
+    .body__about{
+        grid-template-areas: 
+            "header"
+            "info"
+            "sponsors"
+            "footer "
+        ;
+        .info-section{
+            margin-top: 3rem;
+            .about-section{
+                &__title{
+                    color: $violet9z;
+                    border-bottom: solid $violet9z .5rem;
+                }
+                &__text{
+                    background-color: $violet9z;
+                    color: #FFFFFF;
+                    font-size: 1.75rem;
+                }
+            }
+            .info-ceo{
+                &__img{
+                    border: solid $violet9z .5rem;
+                    border-radius: 1rem;
+                }
+                &__name, &__social{
+                    background-color: $violet9z;
+                    padding: 1rem;
+                    border-radius: 1rem;
+                }
+            }
+        }
+        .sponsors{
+            &-title{
+                color: $violet9z;
+                border-color: $violet9z;
+            }
+            &-img{
+                background-color: $violet9z;
+                padding: 3rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+}
+@media(min-width: 1200px){
+    .body__about{
+        .info-section{
+            flex-direction: row !important;
+            align-items: flex-start !important;
+            justify-content: space-evenly;
+            .about-section{
+                max-width: 75rem;
+                &__title{
+                    font-size: 6rem;
+                }
+            }
+            .info-ceo{
+                &__social{
+                    a{
+                        transition: all .2s;
+                        &:hover{
+                            background-color: $violet9z;
+                            padding: 0;
+                            transform: translateY(-.5rem);
+                        }
+                    }
+                }
+            }
+        }
+        .sponsors{
+            &-img{
+                flex-direction: row !important;
+                .sponsor-logo{
+                    width: 9rem;
+                    height: 5rem;
+                }
+                #shell-logo{
+                    width: 6rem;
+                    height: 5rem;
+                }
+                #diggit-logo{
+                    width: 8rem;
+                    height: 4rem;
+                }
+                #lemon-logo{
+                    width: 14rem;
+                }
+                #logitech-logo{
+                    width: 13rem;
+                    height: 4rem;
+                }
+            }
+        }
+    }
+}
+/*----------END ABOUT----------*/

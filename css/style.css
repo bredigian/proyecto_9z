@@ -934,6 +934,158 @@ html {
   }
 }
 /*----------END SHOP----------*/
+/*----------ABOIUT----------*/
+@media (min-width: 0px) {
+  .body__about {
+    display: grid;
+    grid-template-areas: "logo" "info" "sponsors" "footer" "header";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .body__about .info-section {
+    grid-area: info;
+  }
+  .body__about .info-section .about-section {
+    color: #FFFFFF;
+    font-weight: 700;
+  }
+  .body__about .info-section .about-section__title {
+    font-size: 4rem;
+    border-bottom: solid #FFFFFF 0.4rem;
+  }
+  .body__about .info-section .about-section__text {
+    text-align: center;
+    margin: 0 3rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    color: #23003f;
+  }
+  .body__about .info-section .info-ceo__img img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 1rem;
+  }
+  .body__about .info-section .info-ceo__name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+  .body__about .info-section .info-ceo__social {
+    font-size: 2.5rem;
+  }
+  .body__about .info-section .info-ceo__social i {
+    color: #FFFFFF;
+  }
+  .body__about .sponsors {
+    grid-area: sponsors;
+  }
+  .body__about .sponsors-title {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    border-bottom: solid #FFFFFF 0.4rem;
+    font-weight: 700;
+  }
+  .body__about .sponsors-img .sponsor-logo {
+    width: 10rem;
+    height: 7rem;
+  }
+  .body__about .sponsors-img #shell-logo {
+    width: 8rem;
+    height: 7rem;
+  }
+  .body__about .sponsors-img #diggit-logo {
+    height: 5rem;
+  }
+  .body__about .sponsors-img #logitech-logo {
+    width: 11rem;
+    height: 4rem;
+  }
+  .body__about .sponsors-img #redbull-logo {
+    width: 8rem;
+    height: 5rem;
+  }
+}
+@media (min-width: 768px) {
+  .body__about {
+    grid-template-areas: "header" "info" "sponsors" "footer ";
+  }
+  .body__about .info-section {
+    margin-top: 3rem;
+  }
+  .body__about .info-section .about-section__title {
+    color: #23003f;
+    border-bottom: solid #23003f 0.5rem;
+  }
+  .body__about .info-section .about-section__text {
+    background-color: #23003f;
+    color: #FFFFFF;
+    font-size: 1.75rem;
+  }
+  .body__about .info-section .info-ceo__img {
+    border: solid #23003f 0.5rem;
+    border-radius: 1rem;
+  }
+  .body__about .info-section .info-ceo__name, .body__about .info-section .info-ceo__social {
+    background-color: #23003f;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .body__about .sponsors-title {
+    color: #23003f;
+    border-color: #23003f;
+  }
+  .body__about .sponsors-img {
+    background-color: #23003f;
+    padding: 3rem;
+    border-radius: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .body__about .info-section {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: space-evenly;
+  }
+  .body__about .info-section .about-section {
+    max-width: 75rem;
+  }
+  .body__about .info-section .about-section__title {
+    font-size: 6rem;
+  }
+  .body__about .info-section .info-ceo__social a {
+    transition: all 0.2s;
+  }
+  .body__about .info-section .info-ceo__social a:hover {
+    background-color: #23003f;
+    padding: 0;
+    transform: translateY(-0.5rem);
+  }
+  .body__about .sponsors-img {
+    flex-direction: row !important;
+  }
+  .body__about .sponsors-img .sponsor-logo {
+    width: 9rem;
+    height: 5rem;
+  }
+  .body__about .sponsors-img #shell-logo {
+    width: 6rem;
+    height: 5rem;
+  }
+  .body__about .sponsors-img #diggit-logo {
+    width: 8rem;
+    height: 4rem;
+  }
+  .body__about .sponsors-img #lemon-logo {
+    width: 14rem;
+  }
+  .body__about .sponsors-img #logitech-logo {
+    width: 13rem;
+    height: 4rem;
+  }
+}
+/*----------END ABOUT----------*/
 @media (min-width: 0px) {
   .footer {
     grid-area: footer;
