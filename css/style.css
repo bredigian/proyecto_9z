@@ -556,8 +556,8 @@ html {
   .body__matches .last__matches .match-item:hover {
     background-color: transparent;
     backdrop-filter: blur(0.5rem);
-    color: var(--violet9z);
-    border-color: var(--violet9z);
+    color: #23003f;
+    border-color: #23003f;
     cursor: pointer;
   }
   .body__matches .last__matches .match-item .data-game__ico {
@@ -593,8 +593,8 @@ html {
   .body__matches .next__matches .match-item:hover {
     background-color: transparent;
     backdrop-filter: blur(0.5rem);
-    color: var(--violet9z);
-    border-color: var(--violet9z);
+    color: #23003f;
+    border-color: #23003f;
     cursor: pointer;
   }
   .body__matches .next__matches .match-item .data-game__ico {
@@ -848,6 +848,92 @@ html {
   }
 }
 /*----------END NEWS----------*/
+/*----------SHOP----------*/
+@media (min-width: 0px) {
+  .body__shop {
+    display: grid;
+    grid-template-areas: "logo" "shop__container" "footer" "header";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .body__shop .shop__container {
+    grid-area: shop__container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    margin-top: 0;
+  }
+  .body__shop .shop__container .card-shop {
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 85% !important;
+    max-width: 600px;
+  }
+  .body__shop .shop__container .card-shop .card-img-top {
+    width: 15rem;
+  }
+  .body__shop .shop__container .card-shop .card-body .card-title {
+    color: #23003f;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .body__shop .shop__container .card-shop .card-body .card-text {
+    color: #23003f;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .body__shop .shop__container .card-shop .card-body .btn {
+    font-size: 2rem;
+    background-color: #23003f;
+    border: none;
+  }
+}
+@media (min-width: 768px) {
+  .body__shop {
+    grid-template-areas: "header" "shop__container" "footer";
+    grid-template-rows: 1fr 5fr 2.5fr;
+  }
+  .body__shop .shop__container {
+    margin: 2rem;
+  }
+  .body__shop .shop__container .card-shop {
+    background-color: #23003f;
+  }
+  .body__shop .shop__container .card-shop .card-body .card-title, .body__shop .shop__container .card-shop .card-body .card-text {
+    color: #FFFFFF;
+  }
+  .body__shop .shop__container .card-shop .card-body .btn {
+    background-color: transparent;
+    border: solid #FFFFFF 0.2rem;
+    color: #FFFFFF;
+  }
+}
+@media (min-width: 1200px) {
+  .body__shop .shop__container .card-shop {
+    transition: all 0.2s;
+  }
+  .body__shop .shop__container .card-shop:hover {
+    background-color: transparent;
+    backdrop-filter: blur(0.5rem);
+  }
+  .body__shop .shop__container .card-shop:hover .card-title, .body__shop .shop__container .card-shop:hover .card-text {
+    color: #23003f !important;
+  }
+  .body__shop .shop__container .card-shop:hover .btn {
+    background-color: #23003f;
+    border-color: #23003f;
+    color: #FFFFFF;
+  }
+  .body__shop .shop__container .card-shop .card-body .card-title {
+    font-size: 4rem;
+  }
+  .body__shop .shop__container .card-shop .card-body .card-text {
+    font-size: 2.5rem;
+  }
+}
+/*----------END SHOP----------*/
 @media (min-width: 0px) {
   .footer {
     grid-area: footer;

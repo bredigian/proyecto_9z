@@ -1,0 +1,105 @@
+/*----------SHOP----------*/
+@media(min-width: 0px){
+    .body__shop{
+        display: grid;
+        grid-template-areas: 
+            "logo"
+            "shop__container"
+            "footer"
+            "header"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        .shop__container{
+            grid-area: shop__container;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            margin-top: 0;
+            .card-shop{
+                padding: 2rem;
+                border-radius: 1rem;
+                width: 85% !important;
+                max-width: 600px;
+                .card-img-top{
+                    width: 15rem;
+                }
+                .card-body{
+                    .card-title{
+                        color: $violet9z;
+                        font-size: 2rem;
+                        font-weight: 700;
+                    }
+                    .card-text{
+                        color: $violet9z;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                    }
+                    .btn{
+                        font-size: 2rem;
+                        background-color: $violet9z;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width: 768px){
+    .body__shop{
+        grid-template-areas: 
+            "header"
+            "shop__container"
+            "footer"
+        ;
+        grid-template-rows: 1fr 5fr 2.5fr;
+        .shop__container{
+            margin: 2rem;
+            .card-shop{
+                background-color: $violet9z;
+                .card-body{
+                    .card-title, .card-text{
+                        color: #FFFFFF;
+                    }
+                    .btn{
+                        background-color: transparent;
+                        border: solid #FFFFFF .2rem;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width: 1200px){
+    .body__shop{
+        .shop__container{
+            .card-shop{
+                transition: all .2s;
+                &:hover{
+                    background-color: transparent;
+                    backdrop-filter: blur(.5rem);
+                    .card-title, .card-text{
+                        color: $violet9z !important;
+                    }
+                    .btn{
+                        background-color: $violet9z;
+                        border-color: $violet9z;
+                        color: #FFFFFF;
+                    }
+                }
+                .card-body{
+                    .card-title{
+                        font-size: 4rem;
+                    }
+                    .card-text{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+/*----------END SHOP----------*/

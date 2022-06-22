@@ -151,8 +151,8 @@
                 &:hover{
                     background-color: transparent;
                     backdrop-filter: blur(.5rem);
-                    color: var(--violet9z);
-                    border-color: var(--violet9z);
+                    color: $violet9z;
+                    border-color: $violet9z;
                     cursor: pointer;
                 }
                 .data-game{
@@ -194,8 +194,8 @@
                 &:hover{
                     background-color: transparent;
                     backdrop-filter: blur(.5rem);
-                    color: var(--violet9z);
-                    border-color: var(--violet9z);
+                    color: $violet9z;
+                    border-color: $violet9z;
                     cursor: pointer;
                 }
                 .data-game{
