@@ -1,0 +1,128 @@
+/*----------CONTACT----------*/
+@media(min-width: 0px){
+    .body__contact{
+        display: grid;
+        grid-template-areas: 
+            "logo"
+            "contact-info"
+            "contact-section"
+            "footer"
+            "header"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        .contact-info{
+            grid-area: contact-info;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 3rem;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            gap: 2rem;
+            background-color: #FFFFFF;
+            border-radius: 1rem;
+            color: $violet9z;
+            font-weight: 700;
+            &__titles{
+                font-size: 5rem;
+                border: solid $violet9z .5rem;
+                border-radius: 1rem;
+                padding: 1rem;
+            }
+            p{
+                font-size: 3rem;
+                text-align: center;
+            }
+        }
+        .contact-section{
+            grid-area: contact-section;
+            &__title{
+                font-size: 3rem;
+                font-weight: 700;
+                color: #FFFFFF;
+            }
+            &__data{
+                font-size: 2rem;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                border-bottom: solid #FFFFFF 0.2rem;
+                color: #FFFFFF;
+            }
+            ::placeholder{
+                color: #FFFFFF;
+            }
+            .buttons{
+                .button{
+                    font-size: 2rem;
+                    background-color: #FFFFFF;
+                    color: $violet9z;
+                    padding: 1rem;
+                    border: none;
+                    border-radius: 1rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+@media(min-width: 768px){
+    .body__contact{
+        grid-template-areas: 
+            "header"
+            "contact-info"
+            "contact-section"
+            "footer"
+        ;
+        .contact-info{
+            margin-top: 3rem;
+            justify-content: center;
+            background-color: $violet9z;
+            color: #FFFFFF;
+        }
+        .contact-section{
+            form{
+                background-color: $violet9z;
+                padding: 3rem;
+                border-radius: 1rem;
+            }
+            &__title{
+                color: $violet9z;
+                border-bottom: solid $violet9z .5rem;
+            }
+        }
+    }
+}
+@media(min-width: 1200px){
+    .body__contact{
+        grid-template-areas: 
+            "header header"
+            "contact-info contact-section"
+            "footer footer"
+        ;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 0fr 2fr 0fr;
+        align-items: center;
+        .contact-section{
+            .buttons{
+                margin-top: 0;
+                .button{
+                    font-size: 2rem;
+                    background: none;
+                    color: #FFFFFF;
+                    margin: 1.5rem;
+                    padding: 1rem;
+                    border: solid #FFFFFF 0.1rem;
+                    border-radius: 0;
+                    &:hover{
+                        background-color: #FFFFFF;
+                        color: $violet9z;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+/*----------END CONTACT----------*/

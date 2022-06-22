@@ -1086,6 +1086,113 @@ html {
   }
 }
 /*----------END ABOUT----------*/
+/*----------CONTACT----------*/
+@media (min-width: 0px) {
+  .body__contact {
+    display: grid;
+    grid-template-areas: "logo" "contact-info" "contact-section" "footer" "header";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .body__contact .contact-info {
+    grid-area: contact-info;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    color: #23003f;
+    font-weight: 700;
+  }
+  .body__contact .contact-info__titles {
+    font-size: 5rem;
+    border: solid #23003f 0.5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  .body__contact .contact-info p {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .body__contact .contact-section {
+    grid-area: contact-section;
+  }
+  .body__contact .contact-section__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+  .body__contact .contact-section__data {
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: solid #FFFFFF 0.2rem;
+    color: #FFFFFF;
+  }
+  .body__contact .contact-section ::placeholder {
+    color: #FFFFFF;
+  }
+  .body__contact .contact-section .buttons .button {
+    font-size: 2rem;
+    background-color: #FFFFFF;
+    color: #23003f;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 768px) {
+  .body__contact {
+    grid-template-areas: "header" "contact-info" "contact-section" "footer";
+  }
+  .body__contact .contact-info {
+    margin-top: 3rem;
+    justify-content: center;
+    background-color: #23003f;
+    color: #FFFFFF;
+  }
+  .body__contact .contact-section form {
+    background-color: #23003f;
+    padding: 3rem;
+    border-radius: 1rem;
+  }
+  .body__contact .contact-section__title {
+    color: #23003f;
+    border-bottom: solid #23003f 0.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .body__contact {
+    grid-template-areas: "header header" "contact-info contact-section" "footer footer";
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 0fr 2fr 0fr;
+    align-items: center;
+  }
+  .body__contact .contact-section .buttons {
+    margin-top: 0;
+  }
+  .body__contact .contact-section .buttons .button {
+    font-size: 2rem;
+    background: none;
+    color: #FFFFFF;
+    margin: 1.5rem;
+    padding: 1rem;
+    border: solid #FFFFFF 0.1rem;
+    border-radius: 0;
+  }
+  .body__contact .contact-section .buttons .button:hover {
+    background-color: #FFFFFF;
+    color: #23003f;
+    cursor: pointer;
+  }
+}
+/*----------END CONTACT----------*/
 @media (min-width: 0px) {
   .footer {
     grid-area: footer;
