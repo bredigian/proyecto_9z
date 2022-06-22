@@ -1,1 +1,17 @@
 $violet9z: #23003f;
+$textLight: #FFFFFF;
+
+$buttonsLight:(
+    colorText: $violet9z,
+    colorBackground: $textLight
+);
+
+$buttonsDark:(
+    colorText: $textLight,
+    colorBackground: $violet9z
+);
+
+$buttonsTransparent:(
+    colorText: $violet9z,
+    colorBackground: transparent
+);

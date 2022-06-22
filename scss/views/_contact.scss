@@ -107,20 +107,6 @@
         .contact-section{
             .buttons{
                 margin-top: 0;
-                .button{
-                    font-size: 2rem;
-                    background: none;
-                    color: #FFFFFF;
-                    margin: 1.5rem;
-                    padding: 1rem;
-                    border: solid #FFFFFF 0.1rem;
-                    border-radius: 0;
-                    &:hover{
-                        background-color: #FFFFFF;
-                        color: $violet9z;
-                        cursor: pointer;
-                    }
-                }
             }
         }
     }

@@ -146,87 +146,13 @@
         .last__matches{
             margin-bottom: 3rem;
             .match-item{
-                border: solid transparent .2rem;
-                transition: all .2s;
-                &:hover{
-                    background-color: transparent;
-                    backdrop-filter: blur(.5rem);
-                    color: $violet9z;
-                    border-color: $violet9z;
-                    cursor: pointer;
-                }
-                .data-game{
-                    &__ico{
-                        width: 5rem;
-                    }
-                    &__info{
-                        font-size: 2rem;
-                        width: 7rem;
-                    }
-                }
-                .opponents{
-                    gap: 3rem !important;
-                    .opponent{
-                        &-img{
-                            width: 7rem;
-                            height: 7rem;
-                        }
-                        &-name{
-                            font-size: 2rem;
-                        }
-                    }
-                    .scores{
-                        &-score{
-                            font-size: 5rem;
-                        }
-                        &-separator{
-                            font-size: 4rem;
-                        }
-                    }
-                }
+                @include itemMatch;
             }
         }
         .next__matches{
             margin-bottom: 3rem;
             .match-item{
-                border: solid transparent .2rem;
-                transition: all .2s;
-                &:hover{
-                    background-color: transparent;
-                    backdrop-filter: blur(.5rem);
-                    color: $violet9z;
-                    border-color: $violet9z;
-                    cursor: pointer;
-                }
-                .data-game{
-                    &__ico{
-                        width: 5rem;
-                    }
-                    &__info{
-                        font-size: 2rem;
-                        width: 7rem;
-                    }
-                }
-                .opponents{
-                    gap: 3rem !important;
-                    .opponent{
-                        &-img{
-                            width: 7rem;
-                            height: 7rem;
-                        }
-                        &-name{
-                            font-size: 2rem;
-                        }
-                    }
-                    .scores{
-                        &-score{
-                            font-size: 5rem;
-                        }
-                        &-separator{
-                            font-size: 4rem;
-                        }
-                    }
-                }
+                @include itemMatch;
             }
         }
     }

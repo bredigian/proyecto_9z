@@ -89,7 +89,7 @@ html {
   color: #23003f;
   background-color: transparent;
   border: none;
-  font-size: 3rem;
+  font-size: 4rem;
   border-radius: 1rem;
   cursor: pointer;
   transition: 0.5s;
@@ -99,6 +99,28 @@ html {
 }
 .ico-down:focus {
   transform: rotateX(180deg);
+}
+
+.button-reset, .button-submit {
+  font-size: 2rem;
+  background: none;
+  color: #FFFFFF;
+  margin: 1.5rem;
+  padding: 1rem;
+  border: solid #FFFFFF 0.1rem;
+  border-radius: 0;
+}
+.button-reset:hover, .button-submit:hover {
+  background-color: #FFFFFF;
+  color: #23003f;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.button-submit {
+  background-color: #FFFFFF;
+  color: #23003f;
+  font-weight: 700;
 }
 
 @media (min-width: 0px) {
@@ -1176,20 +1198,6 @@ html {
   }
   .body__contact .contact-section .buttons {
     margin-top: 0;
-  }
-  .body__contact .contact-section .buttons .button {
-    font-size: 2rem;
-    background: none;
-    color: #FFFFFF;
-    margin: 1.5rem;
-    padding: 1rem;
-    border: solid #FFFFFF 0.1rem;
-    border-radius: 0;
-  }
-  .body__contact .contact-section .buttons .button:hover {
-    background-color: #FFFFFF;
-    color: #23003f;
-    cursor: pointer;
   }
 }
 /*----------END CONTACT----------*/

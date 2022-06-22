@@ -1,8 +1,8 @@
 .ico-down{
-    color: $violet9z;
-    background-color: transparent;
+    color: map-get($buttonsTransparent, colorText);
+    background-color: map-get($buttonsTransparent, colorBackground);
     border: none;
-    font-size: 3rem;
+    font-size: 4rem;
     border-radius: 1rem;
     cursor: pointer;
     transition: .5s;
@@ -12,4 +12,25 @@
     &:focus{
         transform: rotateX(180deg);
     }
+}
+.button-reset{
+    font-size: 2rem;
+    background: none;
+    color: #FFFFFF;
+    margin: 1.5rem;
+    padding: 1rem;
+    border: solid #FFFFFF 0.1rem;
+    border-radius: 0;
+    &:hover{
+        background-color: #FFFFFF;
+        color: $violet9z;
+        cursor: pointer;
+        font-weight: 700
+    }
+}
+.button-submit{
+    @extend .button-reset;
+    background-color: #FFFFFF;
+    color: $violet9z;
+    font-weight: 700;
 }
