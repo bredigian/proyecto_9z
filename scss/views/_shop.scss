@@ -9,7 +9,7 @@
             "header"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr 3fr 1fr 0fr;
         .shop__container{
             grid-area: shop__container;
             display: flex;
@@ -54,7 +54,7 @@
             "shop__container"
             "footer"
         ;
-        grid-template-rows: 1fr 5fr 2.5fr;
+        grid-template-rows: 1fr 6fr 2.5fr;
         .shop__container{
             margin: 2rem;
             .card-shop{

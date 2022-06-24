@@ -876,7 +876,7 @@ html {
     display: grid;
     grid-template-areas: "logo" "shop__container" "footer" "header";
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 3fr 1fr 0fr;
   }
   .body__shop .shop__container {
     grid-area: shop__container;
@@ -915,7 +915,7 @@ html {
 @media (min-width: 768px) {
   .body__shop {
     grid-template-areas: "header" "shop__container" "footer";
-    grid-template-rows: 1fr 5fr 2.5fr;
+    grid-template-rows: 1fr 6fr 2.5fr;
   }
   .body__shop .shop__container {
     margin: 2rem;
@@ -1193,7 +1193,7 @@ html {
   .body__contact {
     grid-template-areas: "header header" "contact-info contact-section" "footer footer";
     grid-template-columns: 3fr 2fr;
-    grid-template-rows: 0fr 2fr 0fr;
+    grid-template-rows: 1fr 6fr 2fr;
     align-items: center;
   }
   .body__contact .contact-section .buttons {
