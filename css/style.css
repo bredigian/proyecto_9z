@@ -124,6 +124,45 @@ html {
 }
 
 @media (min-width: 0px) {
+  .match-item__button {
+    padding: 0;
+    height: fit-content;
+    color: #23003f;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+  }
+  .match-item__button:hover, .match-item__button:focus, .match-item__button:focus-visible, .match-item__button:active {
+    background-color: transparent;
+    color: #23003f;
+  }
+  .button-windowDetails {
+    color: #FFFFFF;
+    background-color: #23003f;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .button-windowDetails:hover {
+    color: #23003f;
+    background-color: #FFFFFF;
+    border-color: #23003f;
+  }
+}
+@media (min-width: 768px) {
+  .match-item__button {
+    margin-left: 1rem;
+    color: #FFFFFF;
+  }
+  .match-item__button:hover, .match-item__button:focus {
+    color: #FFFFFF;
+  }
+}
+@media (min-width: 1200px) {
+  .match-item__button {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 0px) {
   .header {
     grid-area: header;
     background-color: #FFFFFF;
@@ -496,6 +535,9 @@ html {
     font-size: 2rem;
     font-weight: 700;
   }
+  .body__matches .last__matches .match-item__details {
+    color: #23003f;
+  }
   .body__matches .next__matches {
     grid-area: next;
     margin: 3rem 0;
@@ -549,6 +591,12 @@ html {
   .body__matches .last__matches .match-item .opponents .scores {
     gap: 1rem !important;
   }
+  .body__matches .last__matches .match-item__details {
+    font-size: 1.5rem;
+  }
+  .body__matches .last__matches .match-item__details h5 {
+    font-size: 2rem;
+  }
   .body__matches .next__matches {
     margin-top: 3rem;
   }
@@ -574,13 +622,6 @@ html {
   .body__matches .last__matches .match-item {
     border: solid transparent 0.2rem;
     transition: all 0.2s;
-  }
-  .body__matches .last__matches .match-item:hover {
-    background-color: transparent;
-    backdrop-filter: blur(0.5rem);
-    color: #23003f;
-    border-color: #23003f;
-    cursor: pointer;
   }
   .body__matches .last__matches .match-item .data-game__ico {
     width: 5rem;
@@ -611,13 +652,6 @@ html {
   .body__matches .next__matches .match-item {
     border: solid transparent 0.2rem;
     transition: all 0.2s;
-  }
-  .body__matches .next__matches .match-item:hover {
-    background-color: transparent;
-    backdrop-filter: blur(0.5rem);
-    color: #23003f;
-    border-color: #23003f;
-    cursor: pointer;
   }
   .body__matches .next__matches .match-item .data-game__ico {
     width: 5rem;

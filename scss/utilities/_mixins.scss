@@ -1,13 +1,6 @@
 @mixin itemMatch{
     border: solid transparent .2rem;
     transition: all .2s;
-    &:hover{
-        background-color: transparent;
-        backdrop-filter: blur(.5rem);
-        color: $violet9z;
-        border-color: $violet9z;
-        cursor: pointer;
-    }
     .data-game{
         &__ico{
             width: 5rem;

@@ -51,6 +51,9 @@
                         }
                     }
                 }
+                &__details{
+                    color: $violet9z;
+                }
             }
         }
         .next__matches{
@@ -115,6 +118,12 @@
                     gap: 5rem !important;
                     .scores{
                         gap: 1rem !important;
+                    }
+                }
+                &__details{
+                    font-size: 1.5rem;
+                    h5{
+                        font-size: 2rem;
                     }
                 }
             }
