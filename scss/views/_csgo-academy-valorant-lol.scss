@@ -17,14 +17,7 @@
             text-align: center;
             border-radius: 1rem;
             &__ico{
-                width: 10rem;
-            }
-            &__img{
-                width: 100%;
-                img{
-                    width: 100%;
-                    border-radius: 1rem;
-                }
+                width: 20rem;
             }
         }
         .players{
@@ -68,10 +61,7 @@
         ;
         .allTeam{
             &__ico{
-                width: 15rem;
-                img{
-                    border: solid $violet9z .4rem;
-                }
+                width: 25rem;
             }
         }
         .players{
@@ -101,8 +91,9 @@
 @media(min-width: 1200px){
     .body__team{
         .allTeam{
-            max-width: 1144px;
-            margin: 0 auto;
+            &__ico{
+                width: 30rem;
+            }
         }
         .players{
             flex-direction: row!important;

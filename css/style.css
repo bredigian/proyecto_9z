@@ -749,14 +749,7 @@ html ::selection {
     border-radius: 1rem;
   }
   .body__team .allTeam__ico {
-    width: 10rem;
-  }
-  .body__team .allTeam__img {
-    width: 100%;
-  }
-  .body__team .allTeam__img img {
-    width: 100%;
-    border-radius: 1rem;
+    width: 20rem;
   }
   .body__team .players {
     grid-area: players;
@@ -791,10 +784,7 @@ html ::selection {
     grid-template-areas: "header" "allTeam" "players" "footer";
   }
   .body__team .allTeam__ico {
-    width: 15rem;
-  }
-  .body__team .allTeam__ico img {
-    border: solid #23003f 0.4rem;
+    width: 25rem;
   }
   .body__team .players .player {
     background-color: #23003f;
@@ -814,9 +804,8 @@ html ::selection {
   }
 }
 @media (min-width: 1200px) {
-  .body__team .allTeam {
-    max-width: 1144px;
-    margin: 0 auto;
+  .body__team .allTeam__ico {
+    width: 30rem;
   }
   .body__team .players {
     flex-direction: row !important;
