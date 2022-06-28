@@ -4,4 +4,8 @@
 }
 html{
     font-size: 62.5%;
+    ::selection{
+        background-color: #FFFFFF;
+        color: $violet9z;
+    }
 }

@@ -9,15 +9,14 @@
             "header"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 3fr 1fr 0fr;
+        grid-template-rows: auto;
         .shop__container{
             grid-area: shop__container;
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 2rem;
-            margin: 2rem 0;
-            margin-top: 0;
+            margin: 4.3rem 0;
             .card-shop{
                 padding: 2rem;
                 border-radius: 1rem;
@@ -54,9 +53,9 @@
             "shop__container"
             "footer"
         ;
-        grid-template-rows: 1fr 6fr 2.5fr;
+        grid-template-rows: auto;
         .shop__container{
-            margin: 2rem;
+            margin: 6.45rem 0;
             .card-shop{
                 background-color: $violet9z;
                 .card-body{
@@ -76,6 +75,7 @@
 @media(min-width: 1200px){
     .body__shop{
         .shop__container{
+            margin: 2.4rem 0;
             .card-shop{
                 transition: all .2s;
                 &:hover{

@@ -3,87 +3,103 @@
         grid-area: footer;
         background-color: #FFFFFF;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 3rem;
+        align-items: flex-start;
+        justify-content: center;
         padding: 3rem;
-        color: $violet9z;
-        .footer__container{
-            display: flex;
-            width: 100%;
-            justify-content: space-around;
-            .more__sections{
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-around;
-                list-style-type: none;
-                gap: 2rem;
-                .more__sections-item{
-                    color:  $violet9z;
-                    font-size: 1.5rem;
-                    font-weight: 700;
-                }
+        gap: 2rem;
+        &-img{
+            img{
+                width: 12rem;
             }
-            .footer__social{
-                width: 100%;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                i{
-                    font-size: 3rem;
-                    color: $violet9z;
-                }
+            .copyright{
+                color: $violet9z;
+                font-weight: 700;
+                font-size: 1.2rem;
+                text-align: center;
             }
         }
-        .footer__text{
-            font-size: 2rem;
+        .footer-titles{
+            font-size: 1.5rem;
+            color: $violet9z;
             font-weight: 700;
-            color: var(--violet9z);
-            text-align: center;
+        }
+        &-sections{
+            a{
+                color: $violet9z;
+                font-size: 1.2rem;
+            }
+        }
+        &-social{
+            &__item{
+                .only-mobile{
+                    color: $violet9z;
+                    font-size: 2rem;
+                }
+            }
         }
     }
 }
 @media (min-width: 768px){
     .footer{
         background-color: $violet9z;
-        .footer__container{
-            .more__sections{
-                .more__sections-item{
-                    color: #FFFFFF;
-                }
+        padding: 5rem;
+        gap: 5rem;
+        &-img{
+            gap: 3rem !important;
+            img{
+                width: 15rem;
             }
-            .footer__social{
-                i{
-                    color: #FFFFFF;
-                }
+            .copyright{
+                color: #FFFFFF;
+                font-size: 1.5rem;
             }
         }
-        .footer__text{
+        .footer-titles{
+            font-size: 1.5rem;
             color: #FFFFFF;
+        }
+        &-sections{
+            list-style-type: none;
+            a{
+                color: #FFFFFF;
+                font-size: 1.5rem;
+            }
+        }
+        &-social{
+            align-items: flex-start !important;
+            &__item{
+                .tablet-desktop{
+                    color: #FFFFFF;
+                    font-size: 1.5rem;
+                }
+            }
         }
     }
 }
-@media (min-width: 1200px){
+@media(min-width: 1200px){
     .footer{
-        font-size: 2rem;
-        width: 100%;
-        height: 100%;
-        .footer__container{
-            .more__sections{
-                flex-direction: row;
-                justify-content: space-evenly;
-                &hover{
-                    color: #FFFFFF;
-                }
+        justify-content: center;
+        gap: 20rem;
+        &-img{
+            img{
+                width: 18rem;
             }
-            .footer__social{
-                gap: 4rem;
-                margin: 2.5rem;
-                i{
-                    font-size: 3rem;
+            .copyright{
+                font-size: 2rem;
+            }
+        }
+        .footer-titles{
+            font-size: 2.5rem;
+        }
+        &-sections{
+            a{
+                font-size: 1.8rem;
+            }
+        }
+        &-social{
+            &__item{
+                .tablet-desktop{
+                    font-size: 1.8rem;
                 }
             }
         }

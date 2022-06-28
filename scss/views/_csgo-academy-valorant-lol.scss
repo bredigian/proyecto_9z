@@ -100,9 +100,9 @@
 }
 @media(min-width: 1200px){
     .body__team{
-        justify-items: center;
         .allTeam{
             max-width: 1144px;
+            margin: 0 auto;
         }
         .players{
             flex-direction: row!important;

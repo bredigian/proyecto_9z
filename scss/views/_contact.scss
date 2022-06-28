@@ -102,8 +102,11 @@
             "footer footer"
         ;
         grid-template-columns: 3fr 2fr;
-        grid-template-rows: 1fr 6fr 2fr;
+        grid-template-rows: auto;
         align-items: center;
+        .contact-info{
+            margin: 6.48rem 3rem
+        }
         .contact-section{
             .buttons{
                 margin-top: 0;
