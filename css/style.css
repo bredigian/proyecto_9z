@@ -210,6 +210,9 @@ html ::selection {
     box-shadow: none;
     margin: 0;
     padding: 0;
+    -webkit-box-shadow: 0px 13px 35px 0px rgb(35, 0, 63);
+    -moz-box-shadow: 0px 13px 35px 0px rgb(35, 0, 63);
+    box-shadow: 0px 13px 35px 0px rgb(35, 0, 63);
   }
   .header .header__navbar .navbar__container .li-word {
     display: block;

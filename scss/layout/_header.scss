@@ -46,6 +46,9 @@
         box-shadow: none;
         margin: 0;
         padding: 0;
+        -webkit-box-shadow: 0px 13px 35px 0px rgba(35,0,63,1);
+        -moz-box-shadow: 0px 13px 35px 0px rgba(35,0,63,1);
+        box-shadow: 0px 13px 35px 0px rgba(35,0,63,1);
         .header__navbar{
             .navbar__container{
                 .li-word{
