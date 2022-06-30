@@ -99,6 +99,9 @@
                     border-bottom: solid $violet9z .5rem;
                 }
                 &__text{
+                    -webkit-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+                    -moz-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+                    box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
                     background-color: $violet9z;
                     color: #FFFFFF;
                     font-size: 1.75rem;
@@ -122,6 +125,9 @@
                 border-color: $violet9z;
             }
             &-img{
+                -webkit-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+                -moz-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+                box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
                 background-color: $violet9z;
                 padding: 3rem;
                 border-radius: 1rem;

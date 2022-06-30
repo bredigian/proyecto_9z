@@ -15,6 +15,7 @@
             padding: 0 2rem;
             &-items{
                 .news-item{
+                    border-radius: 1rem;
                     .news-img{
                         width: 30rem;
                         height: 17rem;
@@ -52,6 +53,9 @@
             margin-top: 3rem;
             &-items{
                 .news-item{
+                    -webkit-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+                    -moz-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+                    box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
                     &__text{
                         background-color: $violet9z;
                         color: #FFFFFF;

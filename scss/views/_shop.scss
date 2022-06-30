@@ -57,6 +57,9 @@
         .shop__container{
             margin: 6.45rem 0;
             .card-shop{
+                -webkit-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+                -moz-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+                box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
                 background-color: $violet9z;
                 .card-body{
                     .card-title, .card-text{
@@ -77,19 +80,6 @@
         .shop__container{
             margin: 2.4rem 0;
             .card-shop{
-                transition: all .2s;
-                &:hover{
-                    background-color: transparent;
-                    backdrop-filter: blur(.5rem);
-                    .card-title, .card-text{
-                        color: $violet9z !important;
-                    }
-                    .btn{
-                        background-color: $violet9z;
-                        border-color: $violet9z;
-                        color: #FFFFFF;
-                    }
-                }
                 .card-body{
                     .card-title{
                         font-size: 4rem;

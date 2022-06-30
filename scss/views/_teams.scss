@@ -39,6 +39,9 @@
             margin-top: 3rem;
             .teams{
                 &__item{
+                    -webkit-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+                    -moz-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+                    box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
                     background-color: $violet9z;
                     max-width: 53rem;
                 }

@@ -76,13 +76,23 @@
             "footer"
         ;
         .contact-info{
+            -webkit-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+            -moz-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+            box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
             margin-top: 3rem;
             justify-content: center;
             background-color: $violet9z;
             color: #FFFFFF;
+            &__titles{
+                background-color: #FFFFFF;
+                color: $violet9z;
+            }
         }
         .contact-section{
             form{
+                -webkit-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+                -moz-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+                box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
                 background-color: $violet9z;
                 padding: 3rem;
                 border-radius: 1rem;

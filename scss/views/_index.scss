@@ -133,6 +133,9 @@
     }
     .news{
         .carousel-inner{
+            -webkit-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+            -moz-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+            box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
             .carousel-item{
                 .news-description{
                     font-size: 1.5rem;
@@ -146,6 +149,9 @@
     }
     .last-match{
         .last-match__item{
+            -webkit-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+            -moz-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+            box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
             background-color: $violet9z!important;
             color: #FFFFFF;
             width: 50% !important;
@@ -162,6 +168,9 @@
         align-items: center;
         width: 100%;
         .next-match__item{
+            -webkit-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+            -moz-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+            box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
             background-color: $violet9z;
             color: #FFFFFF;
             border-radius: 1rem;
@@ -194,10 +203,20 @@
             }
         }
     }
+    .twitter{
+        div{
+            -webkit-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+            -moz-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+            box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+        }
+    }
     .shop{
         margin-top: 1.5rem;
         .card-shop{
             background-color: $violet9z;
+            -webkit-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+            -moz-box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
+            box-shadow: 18px 18px 14px -1px rgba(35,0,63,0.71);
             .card-body{
                 .card-title{
                     color: #FFFFFF!important;

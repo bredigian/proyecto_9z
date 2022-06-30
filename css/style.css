@@ -356,6 +356,11 @@ html ::selection {
   .body__index {
     grid-template-areas: "header" "news" "last-match" "next-matches" "shop" "footer";
   }
+  .news .carousel-inner {
+    -webkit-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    -moz-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+  }
   .news .carousel-inner .carousel-item .news-description {
     font-size: 1.5rem;
     font-weight: 700;
@@ -364,6 +369,9 @@ html ::selection {
     padding: 1rem;
   }
   .last-match .last-match__item {
+    -webkit-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    -moz-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
     background-color: #23003f !important;
     color: #FFFFFF;
     width: 50% !important;
@@ -380,6 +388,9 @@ html ::selection {
     width: 100%;
   }
   .next-match .next-match__item {
+    -webkit-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    -moz-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
     background-color: #23003f;
     color: #FFFFFF;
     border-radius: 1rem;
@@ -405,11 +416,19 @@ html ::selection {
     font-size: 3rem;
     font-weight: 700;
   }
+  .twitter div {
+    -webkit-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    -moz-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+  }
   .shop {
     margin-top: 1.5rem;
   }
   .shop .card-shop {
     background-color: #23003f;
+    -webkit-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    -moz-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
   }
   .shop .card-shop .card-body .card-title {
     color: #FFFFFF !important;
@@ -599,6 +618,9 @@ html ::selection {
     margin-top: 3rem;
   }
   .body__matches .last__matches .match-item {
+    -webkit-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    -moz-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
     background-color: #23003f;
     color: #FFFFFF;
   }
@@ -618,6 +640,9 @@ html ::selection {
     margin-top: 3rem;
   }
   .body__matches .next__matches .match-item {
+    -webkit-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    -moz-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
     background-color: #23003f;
     color: #FFFFFF;
   }
@@ -726,6 +751,9 @@ html ::selection {
     margin-top: 3rem;
   }
   .body__teams .teams__container .teams__item {
+    -webkit-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    -moz-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
     background-color: #23003f;
     max-width: 53rem;
   }
@@ -801,6 +829,9 @@ html ::selection {
     margin: 2rem;
   }
   .body__team .players .player {
+    -webkit-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    -moz-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
     background-color: #23003f;
   }
   .body__team .players .player__img-aux {
@@ -857,6 +888,9 @@ html ::selection {
     grid-area: news__container;
     padding: 0 2rem;
   }
+  .body__news .news__container-items .news-item {
+    border-radius: 1rem;
+  }
   .body__news .news__container-items .news-item .news-img {
     width: 30rem;
     height: 17rem;
@@ -885,6 +919,11 @@ html ::selection {
   }
   .body__news .news__container {
     margin-top: 3rem;
+  }
+  .body__news .news__container-items .news-item {
+    -webkit-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    -moz-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
   }
   .body__news .news__container-items .news-item__text {
     background-color: #23003f;
@@ -959,6 +998,9 @@ html ::selection {
     margin: 6.45rem 0;
   }
   .body__shop .shop__container .card-shop {
+    -webkit-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    -moz-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
     background-color: #23003f;
   }
   .body__shop .shop__container .card-shop .card-body .card-title, .body__shop .shop__container .card-shop .card-body .card-text {
@@ -973,21 +1015,6 @@ html ::selection {
 @media (min-width: 1200px) {
   .body__shop .shop__container {
     margin: 2.4rem 0;
-  }
-  .body__shop .shop__container .card-shop {
-    transition: all 0.2s;
-  }
-  .body__shop .shop__container .card-shop:hover {
-    background-color: transparent;
-    backdrop-filter: blur(0.5rem);
-  }
-  .body__shop .shop__container .card-shop:hover .card-title, .body__shop .shop__container .card-shop:hover .card-text {
-    color: #23003f !important;
-  }
-  .body__shop .shop__container .card-shop:hover .btn {
-    background-color: #23003f;
-    border-color: #23003f;
-    color: #FFFFFF;
   }
   .body__shop .shop__container .card-shop .card-body .card-title {
     font-size: 4rem;
@@ -1082,6 +1109,9 @@ html ::selection {
     border-bottom: solid #23003f 0.5rem;
   }
   .body__about .info-section .about-section__text {
+    -webkit-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    -moz-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
     background-color: #23003f;
     color: #FFFFFF;
     font-size: 1.75rem;
@@ -1100,6 +1130,9 @@ html ::selection {
     border-color: #23003f;
   }
   .body__about .sponsors-img {
+    -webkit-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    -moz-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
     background-color: #23003f;
     padding: 3rem;
     border-radius: 1rem;
@@ -1215,12 +1248,22 @@ html ::selection {
     grid-template-areas: "header" "contact-info" "contact-section" "footer";
   }
   .body__contact .contact-info {
+    -webkit-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    -moz-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
     margin-top: 3rem;
     justify-content: center;
     background-color: #23003f;
     color: #FFFFFF;
   }
+  .body__contact .contact-info__titles {
+    background-color: #FFFFFF;
+    color: #23003f;
+  }
   .body__contact .contact-section form {
+    -webkit-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    -moz-box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
+    box-shadow: 18px 18px 14px -1px rgba(35, 0, 63, 0.71);
     background-color: #23003f;
     padding: 3rem;
     border-radius: 1rem;
