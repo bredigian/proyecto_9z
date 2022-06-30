@@ -24,6 +24,7 @@
             font-weight: 700;
         }
         &-sections{
+            list-style-type: none;
             a{
                 color: $violet9z;
                 font-size: 1.2rem;
@@ -59,7 +60,6 @@
             color: #FFFFFF;
         }
         &-sections{
-            list-style-type: none;
             a{
                 color: #FFFFFF;
                 font-size: 1.5rem;

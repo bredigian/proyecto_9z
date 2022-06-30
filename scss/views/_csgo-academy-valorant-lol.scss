@@ -35,7 +35,7 @@
                 &__info{
                     p{
                         font-size: 3rem;
-                        color: var(--violet9z);
+                        color: $violet9z;
                         font-weight: 700;
                         width: min-content;
                         text-align: center;
@@ -62,6 +62,7 @@
         .allTeam{
             &__ico{
                 width: 25rem;
+                margin: 2rem;
             }
         }
         .players{

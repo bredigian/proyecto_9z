@@ -770,7 +770,7 @@ html ::selection {
   }
   .body__team .players .player__info p {
     font-size: 3rem;
-    color: var(--violet9z);
+    color: #23003f;
     font-weight: 700;
     width: min-content;
     text-align: center;
@@ -788,6 +788,7 @@ html ::selection {
   }
   .body__team .allTeam__ico {
     width: 25rem;
+    margin: 2rem;
   }
   .body__team .players .player {
     background-color: #23003f;
@@ -1258,6 +1259,9 @@ html ::selection {
     color: #23003f;
     font-weight: 700;
   }
+  .footer-sections {
+    list-style-type: none;
+  }
   .footer-sections a {
     color: #23003f;
     font-size: 1.2rem;
@@ -1286,9 +1290,6 @@ html ::selection {
   .footer .footer-titles {
     font-size: 1.5rem;
     color: #FFFFFF;
-  }
-  .footer-sections {
-    list-style-type: none;
   }
   .footer-sections a {
     color: #FFFFFF;
