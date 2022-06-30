@@ -28,6 +28,9 @@
                 background-color: #FFFFFF;
                 border-radius: 1rem;
                 width: 100%;
+                .data{
+                    gap: 5rem;
+                }
                 .info{
                     font-size: 1.5rem;
                     font-weight: 700;
@@ -49,6 +52,7 @@
                             font-weight: 700;
                         }
                         .scores-separator{
+                            text-align: center;
                             font-size: 3rem;
                             font-weight: 700;
                         }
@@ -144,7 +148,9 @@
         .last-match__item{
             background-color: $violet9z!important;
             color: #FFFFFF;
-            width: fit-content !important;
+            width: 50% !important;
+            min-width: 402px;
+            max-width: 430.5px;
             .data{
                 gap: 15rem !important;
             }
@@ -159,7 +165,8 @@
             background-color: $violet9z;
             color: #FFFFFF;
             border-radius: 1rem;
-            width: 430.03px;
+            min-width: 402px;
+            max-width: 430.5px;
             .info{
                 font-size: 1.5rem;
                 font-weight: 700;
@@ -232,11 +239,12 @@
         .last-match{
             padding: 0 !important;
             .last-match__item{
+                min-width: 472px !important;
                 .info{
                     font-size: 2rem;
                 }
                 .opponents{
-                    gap: 6rem !important;
+                    gap: 7rem !important;
                     .opponent{
                         .opponent-img{
                             width: 10rem;
@@ -274,7 +282,7 @@
         }
         .next-match{
             .next-match__item{
-                width: 508.36px;
+                min-width: 472px;
                 .info{
                     font-size: 2rem;
                 }

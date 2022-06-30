@@ -275,6 +275,9 @@ html ::selection {
     border-radius: 1rem;
     width: 100%;
   }
+  .body__index .last-match .last-match__item .data {
+    gap: 5rem;
+  }
   .body__index .last-match .last-match__item .info {
     font-size: 1.5rem;
     font-weight: 700;
@@ -292,6 +295,7 @@ html ::selection {
     font-weight: 700;
   }
   .body__index .last-match .last-match__item .opponents .scores .scores-separator {
+    text-align: center;
     font-size: 3rem;
     font-weight: 700;
   }
@@ -362,7 +366,9 @@ html ::selection {
   .last-match .last-match__item {
     background-color: #23003f !important;
     color: #FFFFFF;
-    width: fit-content !important;
+    width: 50% !important;
+    min-width: 402px;
+    max-width: 430.5px;
   }
   .last-match .last-match__item .data {
     gap: 15rem !important;
@@ -377,7 +383,8 @@ html ::selection {
     background-color: #23003f;
     color: #FFFFFF;
     border-radius: 1rem;
-    width: 430.03px;
+    min-width: 402px;
+    max-width: 430.5px;
   }
   .next-match .next-match__item .info {
     font-size: 1.5rem;
@@ -432,11 +439,14 @@ html ::selection {
   .body__index .last-match {
     padding: 0 !important;
   }
+  .body__index .last-match .last-match__item {
+    min-width: 472px !important;
+  }
   .body__index .last-match .last-match__item .info {
     font-size: 2rem;
   }
   .body__index .last-match .last-match__item .opponents {
-    gap: 6rem !important;
+    gap: 7rem !important;
   }
   .body__index .last-match .last-match__item .opponents .opponent .opponent-img {
     width: 10rem;
@@ -465,7 +475,7 @@ html ::selection {
     font-size: 1.5rem;
   }
   .body__index .next-match .next-match__item {
-    width: 508.36px;
+    min-width: 472px;
   }
   .body__index .next-match .next-match__item .info {
     font-size: 2rem;
